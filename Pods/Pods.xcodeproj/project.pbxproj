@@ -1,0 +1,2839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C1D72BC345233EADF30A97D462F723B7 /* Build configuration list for PBXAggregateTarget "OpenSSL-Universal" */;
+			buildPhases = (
+				DAEA2BAAFED7B7865CB41712646E4160 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = "OpenSSL-Universal";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0036E06D0609E0B31EB5442647D101AD /* ECError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC6910280312C6B1480B9FEBA14C490 /* ECError.swift */; };
+		01B316CFCCE7A94AC0024D0EC7552B3D /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD501B2BB8DA634A5BA486901CD5F8 /* ASN1.swift */; };
+		054AC1E44E2B9E3C5C1C8D6422F43A8F /* EncryptedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38CCA46E0A6B22795736E7367A1FC4A /* EncryptedMessage.swift */; };
+		0DA8A599A871E6A64B7B9E796B0F3308 /* JWTEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62313944BDBC7EB85E01C8DBD67F7E9D /* JWTEncoder.swift */; };
+		0E545F3C2CF71F4AE0A082886375C3F5 /* ASN1Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659781A9D5AE64A71E435527137ADEE2 /* ASN1Object.swift */; };
+		10505599119A36E8F772ACBDD8A566DE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3873454C8B7A1AF03E18298F706C58 /* Logger.swift */; };
+		106C9BE8D2D5BD88A722A83B881445AD /* Claims.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1345FCA1A4F6AFB5B7F99836C7993FA /* Claims.swift */; };
+		1252D6BEE3F2823D75624C64594DF113 /* CertificateSigningRequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF597A6517DD59E9CE1043AC101AFB3D /* CertificateSigningRequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12F1A8E4E8D4ED4702A5C2626445E153 /* PKCS7_AppleReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C2788F89DBC08F7A88C9423429C2D4 /* PKCS7_AppleReceipt.swift */; };
+		177809E275ECC628EE7CEF6F52B4411A /* RSAKeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84DBA45462199E3CEF13B24E3BB30AC /* RSAKeyType.swift */; };
+		19320FED91FDA23B239DB00F1904A478 /* X509Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C0B289B6979534878044A4C9AD67F /* X509Extension.swift */; };
+		1A7A6400526AF9FE136CB9BA17EB4880 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F58232F8CD102FD19A40F3D9B076608 /* PublicKey.swift */; };
+		1AF6FD4A74E160188340F26D28982A50 /* CryptorRSAConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8091561C72FA78CB1C1260D78D5F6C /* CryptorRSAConstants.swift */; };
+		1BA4F0B05D6A17790291304AF7438DA5 /* VerifierAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24FBCF0A3BBD0BA817C018261B56AA /* VerifierAlgorithm.swift */; };
+		1BEC012FE149C38578B49F0F4FF8249A /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC9E646EFD6BA4F26334D06CF1B172 /* HMAC.swift */; };
+		1EDF0A2FA38DB263B4FBFE0818FC14B3 /* BlueCryptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14722F5E7ECE92C52FBC00D13C2A78E2 /* BlueCryptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B2985EF70D6DB110B5583A67AD3005 /* KituraContracts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084A6519574D14371F6C0E86C80C81 /* KituraContracts-dummy.m */; };
+		214538563382AF40DEA798179B61330F /* BlueECC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E735FB7B4613EFD89B79BC261B2963D /* BlueECC-dummy.m */; };
+		22291180549B1139F56D620A999310A4 /* Contracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F8B4724A666DB82D252298758C051 /* Contracts.swift */; };
+		22AE42A1213246D879A00727F3C5E67E /* X509ExtensionClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295329A98FA3E8AD9315CFF9C0959038 /* X509ExtensionClasses.swift */; };
+		24DCD048ADDDB8F5D4F5F3EFF4D6A394 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6269218EEA84536D249273A003F1 /* Key.swift */; };
+		25B07B4343220D9047066923803DABBE /* ECEncryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718234B4619DC0B38648BA14D43F98AB /* ECEncryptable.swift */; };
+		2695886313F517E6222ECB65F17B4E85 /* SwiftJWT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58FEFB1B3CD89B51B94B9B833AA160E4 /* SwiftJWT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		276CCE7D6298C49428EB1454B1EDFECA /* SSLPointerTricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751C88695F49EBF4B51DD89ED0FF9AE /* SSLPointerTricks.swift */; };
+		2B4DA0685B8685618DF2202C945A544E /* BlueECC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5774A69AD97640308FFC20B4D0E9F07 /* BlueECC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C03C28338745B50B7E5956C03884CE0 /* Data+Base64URLEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BE4C0E27B49AB0CC8225E9817390F6 /* Data+Base64URLEncoded.swift */; };
+		2D70DC58C89E33AB723759672D36B683 /* CryptorRSADigest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44596899E727788BFCECD6B75AD62AC7 /* CryptorRSADigest.swift */; };
+		2D7CC4DD61485FE8246D415A813A94DB /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C84E6E56E9D005497064D90038CFAD /* JWT.swift */; };
+		2DF5E6E3C6C4011A9BCB21161BAA5E65 /* ValidateClaimsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21842F48799C4FC05A7E4281F514FA3 /* ValidateClaimsResult.swift */; };
+		3063E9B1F5C56B51525FC8D0D64BB07B /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4689CC27C141E0F61F765CC178D634D4 /* EllipticCurve.swift */; };
+		3109B5207E71C65D27B3E817A7B35698 /* SwiftJWT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 465ED812ADF3188F41543E00B7774F69 /* SwiftJWT-dummy.m */; };
+		31394629250EE04C1D437CEAA9844825 /* BlueRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E3CC358ADFA76571296DB79F5A794 /* BlueRSA.swift */; };
+		33035D6D177D0DF4B5BD3B1184EDF437 /* Logging-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C6F6089E0F744CB5E4C1E3347ACC0 /* Logging-dummy.m */; };
+		340531AF18F47A75B9688E6294534804 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		37E5ACD84B22B3D3D777DE097A8DF082 /* KituraContracts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 455CE38E4C536CE447F22A33B582D178 /* KituraContracts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FA694DC37ECA342AB0FADB6FD574E92 /* LoggerAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A189C28BC05F3955FBFB36E2990BC /* LoggerAPI-dummy.m */; };
+		3FF50DC751EB78BC4107C7A553A5CF92 /* BlueRSA-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45EA896C592A84E8F7DFF5568D40CA1C /* BlueRSA-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4536B74FE5AFE545116F074900963258 /* PKCS7_Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4C6D2B2771382D6393F9E5E8BE5169 /* PKCS7_Signature.swift */; };
+		459F1BDAF057FEDA89B5DC0F62CD6F36 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E7E538153DA1F1E955AD85DC4FEA06 /* Data+Extensions.swift */; };
+		4B1ED39638712D17BE9FBCAAFEF1468E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		50AD6B8BBDAA111F49780DA337DEF57D /* SignerAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B04B5C9350E39426CAB04DEC0B6505 /* SignerAlgorithm.swift */; };
+		54EE94929FED666E53795A5B635B4D07 /* SwiftyRSA+ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65C25B25961982C65D20E0E3C8A6A5F /* SwiftyRSA+ObjC.swift */; };
+		552A488AA665EDA3778FD07705402F43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		58DB7EED4A562BF27D699AC7D1DC14EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		5A1B131AC4063F33688803DE57CAF6E2 /* X509PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFCEF7064CA9654AE55F161D5192A62 /* X509PublicKey.swift */; };
+		5BFED9BCB02678A257FD5D93176AC40E /* JWTVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2538D0D5653168B3839712054AEF5 /* JWTVerifier.swift */; };
+		5DD9B8B026B60B309CD0054BD6B74E8B /* NoneAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB69C2CCA65F1A2FD79B436952FC676 /* NoneAlgorithm.swift */; };
+		5E1B0B6F334802C66E484E4AB564E96A /* BlueECDSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3147FB2DEDF06488FC57E853A892279 /* BlueECDSA.swift */; };
+		5E3A74F915978A7E264CF8C0ED8D289C /* SwiftyRSA-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C470415E306DA730E0293664504E5098 /* SwiftyRSA-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6262CEE6306F8826EDFAEF0A72943B25 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEDD680D4E24906998087C6EC7FFD7 /* Updatable.swift */; };
+		65345F2C02726D947133E79CCA5CA0CC /* JWTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7528F090B30A13E413A3841F39CC4256 /* JWTError.swift */; };
+		66A47BA41C21A3437906D969DA8765BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		66B106F85D9A3F6FC6ABE7E280391C7E /* CertificateSigningRequestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA51E6618267C1FABBC1BD11022E0773 /* CertificateSigningRequestConstants.swift */; };
+		67416A262352D41ECC8601B3E6D4744E /* CertificateSigningRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB023FB440FD074993592D0F798479C /* CertificateSigningRequest.swift */; };
+		6AF293CFF3CE6DD506AB54A3C9E2722D /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E598F4D904D06FD6C6E983BA3E8334 /* Digest.swift */; };
+		6C1AB8C0B3CAE8E895E194F6C7A8F7FC /* ECSignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08DDCE17929ACE0CA8CDFA57D1D3F71 /* ECSignable.swift */; };
+		70CCAF64C2A4C50DF7F7E9E0E9ACA1CF /* Logging-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68D5A2CCBBB0FF70AE54604F3093FFD0 /* Logging-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72E780E2817D5EE5F3BF72B0122E0811 /* Pods-JWTDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA50EABAB26E62A37EE50440894A67A /* Pods-JWTDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7326CA047952CBD38697917BAB8E0A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		74991B968DEE7DC8432DBBE23F3257C3 /* StreamCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCE0853A1909357BE5E08D4EFC73489 /* StreamCryptor.swift */; };
+		79D835F73197376AE844D95C90933226 /* BlueCryptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A46ED6FC5B083876DF4EBD748B0108 /* BlueCryptor-dummy.m */; };
+		7BBEE2A1BF4C42D44EA22C22E7D8C342 /* BodyFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F35B19F41841F2604952BCE175A01F /* BodyFormat.swift */; };
+		7DDA219DF77250F5CBB3242438DAF486 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57374CA29526E629A95F6C169BE5CC9 /* Header.swift */; };
+		7E325948F030FAB2C99751C55CFB1344 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		7E462830E8D66124921BCBB93A76F1B0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13EBE0E8B9CE7B213D705DEE2B17B99 /* Extensions.swift */; };
+		7FDAF776B7DA00B35D3CE2FE51268833 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */; };
+		804CC711F5AA0EB4E00C9A993FEEB0CA /* BlueHMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854789243B0AF7019F6C3D8334BFA02A /* BlueHMAC.swift */; };
+		84518F8B3BF851E83E0A11BB20459D64 /* ASN1Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630106F949EF407C3EFCFDDBDABA3C7F /* ASN1Encoder.swift */; };
+		88626113053B820D5D65F7FF2841D541 /* ClaimsStandardJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C0896B77B4DC27FF17B8279A41424 /* ClaimsStandardJWT.swift */; };
+		8B355855806FB7FEF614CC32DE5E49C6 /* Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4B2D199EA8D57FAA2EF84B4D8B17D /* Coder.swift */; };
+		8DC2C2BC0F42E9B820EB962B1D76644D /* ClaimsOpenID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C00B07A008187BAF04533609BBA2365 /* ClaimsOpenID.swift */; };
+		8DD611E8904CDF485070E167C273350C /* LogHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FEAD0772BFEFF1F33A517572204A5 /* LogHandler.swift */; };
+		9108F028334A768CEFF16D732B48DA43 /* NSData+SHA.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CF164175F17984CB9E4144E7901A37 /* NSData+SHA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9201AACAF338B5A9B3D8055AC1605809 /* Asn1Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6BBD10E1F7DCB2FE54F5976DCFADA /* Asn1Parser.swift */; };
+		93771D67060533037C5E36F89CA0E6C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		94256662B883B8D44E1424A6748CB18D /* ECDecryptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7645CE7C5EAD576BC2C8DBE3AEF4D4DE /* ECDecryptable.swift */; };
+		94774AD5B012331F2CD021771BA534E2 /* Locks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D1E56DB62A9ADD2B6673517536E39 /* Locks.swift */; };
+		96B4E052EFA52F1F185DC01777763360 /* BodyDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1B088B356132335D8E03F69A60FFD /* BodyDecoder.swift */; };
+		999C450CCAC0C2F31E791BCA12D700CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		99BC73949BA89A03FB1ED130B43A8B02 /* CryptorRSAUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33F0CC6F9D0BD2020415DD8D1F7CA04 /* CryptorRSAUtilities.swift */; };
+		9B0BC531061D8A0E9D1BA67FE97A263A /* SwiftyRSA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 958D515F2F1191C36AB38A68D19405C5 /* SwiftyRSA-dummy.m */; };
+		9C610C7D71A2416595B2D172BCBC8944 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		A1AE499E02CCA5DA5FBABDC92F7FFCC2 /* SwiftyRSAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87041D65285674F3DE497C01A237F74D /* SwiftyRSAError.swift */; };
+		A22F501CEF8902F55BC9C721C5B7AD17 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B44FE82365C8A79D0BABBB11B1B829 /* Status.swift */; };
+		A442E3E925B8E3B705B6910DD907E2A8 /* BodyEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139AA818677C505966AF9081D330D8AF /* BodyEncoder.swift */; };
+		A98B69EE86D815F50D8B9AF37939B4B9 /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE798E675358C5F585DC89505584A2D /* Cryptor.swift */; };
+		A9FDC28AAC04AAF28754E3C9F7D921F7 /* ECPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1BD375C24ACE1BF5D52EE8E5CC76B /* ECPublicKey.swift */; };
+		AA53DAEB5CA0378FED32961B2052A01B /* ClaimsMicroProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA962AB7EFF52E74D886426AEC2D6B /* ClaimsMicroProfile.swift */; };
+		AB796440000E3210864D6E17F984BD2B /* CertificateSigningRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0058C6E01E70E9E9A0CFF1900EB0A994 /* CertificateSigningRequest-dummy.m */; };
+		AC8C84031DC30CD75716F6B35B404D1D /* CryptorRSAErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8C6116F94F5DB6125175D871313FA5 /* CryptorRSAErrors.swift */; };
+		AD86E160D9AF005D4C79997189A78541 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E26ACF2E19A6802055BC1A93E5D77 /* Utilities.swift */; };
+		B404A78B1903F216F03312FC0C51FFFB /* X509ExtensionAltName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9EA2017351C4D6FBB2F5971FC80342 /* X509ExtensionAltName.swift */; };
+		B79F611F8DC5C7827B4D3293CFBEE873 /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289935703D1DF32F0E9AA4FEFDE9775F /* PKCS7.swift */; };
+		BD4FBDE5F2A710292C8287735137C509 /* QueryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A2A75CE18605B659444A1097B8B996 /* QueryDecoder.swift */; };
+		BF67C108B6259651384C3918E40EE800 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F8B9CED9A2652E413F03B4995D479 /* Crypto.swift */; };
+		BFCC0163995C61F48B3B9A7A93DDA6FD /* NSData+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = E05E040050B0F262EE97600A5614BAE8 /* NSData+SHA.m */; };
+		C0B861510614F2C66A5390B3BE54AD29 /* ASN1Decoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CD311955638BD1116A9E13215AF802A /* ASN1Decoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C22CD856FDC788515376347CF56327CC /* SSLPointerTricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1047061C154C84B777DEE638DB06B /* SSLPointerTricks.swift */; };
+		C2C69A82C314BF2092AAB5492EF9E4CD /* CryptorRSAKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9C6E75B26AE57C8589A499FFBC5D5 /* CryptorRSAKey.swift */; };
+		C3E84BE76BE3AD640327004B5A7868D9 /* CryptorRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE430F27AFF6A1ABC990A19B237CCB /* CryptorRSA.swift */; };
+		C67BF5D7C0A9B8E4380C99D85B6BD446 /* X509Certificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC507504E6483945FF1CC07C175B87 /* X509Certificate.swift */; };
+		C95CFC62A388EC4008BD8F0A8D950C18 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DB24CE9A7E0C397A246C5B5EE39A4F /* Signature.swift */; };
+		CA96BF27B2693ED1519801E4DB145A16 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA518D6AE263A7A0B760890E1EE536CB /* Data+Extensions.swift */; };
+		CB2A998AD60A9C8653AB550B8411C2E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */; };
+		CBEE15376AD8AE6E3776D52A107229E0 /* BlueRSA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B3AD1B366B47BE4F41D7E19C107ED6 /* BlueRSA-dummy.m */; };
+		CEB3067254A38A839E0AFCD98DED4616 /* ASN1Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3EE0CEF4A2A3D15D4862F2438C7184 /* ASN1Identifier.swift */; };
+		D29C9D92076A43DCCAF9F0FAE0911321 /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA246DBB85740E4F519DEA727B301F /* JWTDecoder.swift */; };
+		D407CC9388C0080F8E78E8A44749757D /* ASN1Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D1D82A9A77A627CA61231596825D4 /* ASN1Decoder.swift */; };
+		D55723DED8139F0F876B0D76B1415A7A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B864AB2CBB370B15C0EB10ACA2146F /* Message.swift */; };
+		DB48E054F4E39917134AD6A64B768983 /* ASN1Decoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D38C8FD328E3082E6AA0CAE159F94C3C /* ASN1Decoder-dummy.m */; };
+		DBDEFD5E67253B069025C2C08541AF8B /* ClosureAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0937C3ACABA1BA08723D16B2E7814F /* ClosureAliases.swift */; };
+		E1FAE2E561064E7B6D82A872FF21EE22 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3787EC9F57600D16AD61BF82B1DE7EA /* Random.swift */; };
+		E3CFD426F201A7DA156E97D71EB2583D /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DADB278B77C4A1950834DEA3EBBBC /* Logging.swift */; };
+		E4D29BF0611B19578C6954E36C8221D1 /* ECSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65019B32AA1F91D07886990DDDF4BA7D /* ECSignature.swift */; };
+		E67B00531A5F5C7ED8832A189AEC767B /* ECPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E5EF7467EEDF7B449329000AEC8E75 /* ECPrivateKey.swift */; };
+		E9A794DA6F21B35DCEA524916B9823B6 /* ASN1DistinguishedNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9CCCAEE32437B63C8DC9C7CFDE741 /* ASN1DistinguishedNames.swift */; };
+		EA679C848DC90955BC12EAE0A954CBE0 /* QueryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B80FF39CD2466B180B937C3392800E2 /* QueryEncoder.swift */; };
+		ED292E392F7C2FBE9DC27A7B8BC3910B /* OID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D87212C0ED0C66F96B5643AFE0DA20 /* OID.swift */; };
+		ED737EB4F72FC3FA3CF93565FC349DD2 /* JWTSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741751E545E1BF68FB49EA35425F58D /* JWTSigner.swift */; };
+		EFD812A46C14A681FE5FC222C6753C61 /* SwiftyRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA76BD158D768E30FA52858DFBF18C77 /* SwiftyRSA.swift */; };
+		F1C64627CE7DFA9690F630A09A7CB24A /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58645184E697030E5F206F041D6B3DD6 /* PrivateKey.swift */; };
+		F4C8BFA2A6C369044BBC1844B0B1BAAA /* ClearMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC428CC733A83A15A343354587370E7 /* ClearMessage.swift */; };
+		F51BC8682387F14B656F9BE487D2DAA7 /* LoggerAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0F7CA70A7FEF2485291E9C43B5AF5E /* LoggerAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8754CE53F48DF0322C92E13E907327E /* SSLPointerTricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3216874BC98B86185AE3FF98BA1D2A93 /* SSLPointerTricks.swift */; };
+		F8D7C3AA037914AE4B5487CADBAB6A89 /* KeyDerivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679119B7C5DEBDE12E20887B8A2A114E /* KeyDerivation.swift */; };
+		F9111CC8A5E124DEB21E7D6AC2544C49 /* SwiftyRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 01CF4290D0458EDE8208B639D3F4EFDE /* SwiftyRSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9A25DD0BE50B89C87B84FC369FC21D3 /* X509Certificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F56F9E81E12BAE84FEBDCCF130E1D /* X509Certificate.swift */; };
+		FB372C031822D37C4FEB5AB7183591DF /* Pods-JWTDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4995A0128121082DE09D08ADE63AC161 /* Pods-JWTDemo-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00B8BAFBB8AFD7544D5FB0FC76F252A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FF604BE1801EF6B67EED51EDA9D63C9;
+			remoteInfo = BlueECC;
+		};
+		036CD81E5C8F6EFA64171E98804EFC0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CA5FD5A45C3F901A76060FE0F4A9B5F;
+			remoteInfo = BlueRSA;
+		};
+		1DB0D684426FCD49064FBD6DD836014F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7F041D10DB8131E7E8B866AA3D62E32;
+			remoteInfo = SwiftJWT;
+		};
+		200B89251D18E3F7BA0617BBBA8066B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
+			remoteInfo = "OpenSSL-Universal";
+		};
+		29BBB5F900D2E4EFE5F983F40826B784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 921D74A1881BD89FA651ED7078F37128;
+			remoteInfo = KituraContracts;
+		};
+		2C6A243CE526348187A7E945E691FF93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE24E4A530A4D9EBE9D2077B7CAB688D;
+			remoteInfo = ASN1Decoder;
+		};
+		2D0AA21EA461E2462D8F1019074C2FC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28ABE059EE78F37B646540BEAB934E0;
+			remoteInfo = BlueCryptor;
+		};
+		3452B69628EAE09094BE6B73930A7DD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4090B1B7FD0B799BF794751E6A9D826F;
+			remoteInfo = LoggerAPI;
+		};
+		4131B24A72AB3A0A44C4EA4690E09386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4090B1B7FD0B799BF794751E6A9D826F;
+			remoteInfo = LoggerAPI;
+		};
+		4561B32F5B069AD01F74F3D92D6A0F9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28ABE059EE78F37B646540BEAB934E0;
+			remoteInfo = BlueCryptor;
+		};
+		5CCC84E4663480F4F2AE0803E95DA13D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 921D74A1881BD89FA651ED7078F37128;
+			remoteInfo = KituraContracts;
+		};
+		6AC5C6777B6C012FFA7262A60E2C56FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FF604BE1801EF6B67EED51EDA9D63C9;
+			remoteInfo = BlueECC;
+		};
+		7ADA70D96813E8E2B72EDC2C8C0F1045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ABF3F8EC6CE525E1E02C51D72C64E94;
+			remoteInfo = Logging;
+		};
+		8AF51BDD2E62B9D05288C7B30DA242EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A13A3F9C75F44E357FDADF6E2FF8D15B;
+			remoteInfo = CertificateSigningRequest;
+		};
+		A65DC3382B6A1E9C23858E62C18C6C18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CA5FD5A45C3F901A76060FE0F4A9B5F;
+			remoteInfo = BlueRSA;
+		};
+		DEFC81DD974E323A5EBA9F4C5C8D0A52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4090B1B7FD0B799BF794751E6A9D826F;
+			remoteInfo = LoggerAPI;
+		};
+		E683AD8CE4B35409184FCAF79D179995 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92A1C13902E7ACDA3ABB5BA1FEACC86C;
+			remoteInfo = SwiftyRSA;
+		};
+		F6845484581291AF691177583278BC8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ABF3F8EC6CE525E1E02C51D72C64E94;
+			remoteInfo = Logging;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0058C6E01E70E9E9A0CFF1900EB0A994 /* CertificateSigningRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CertificateSigningRequest-dummy.m"; sourceTree = "<group>"; };
+		00A1BD375C24ACE1BF5D52EE8E5CC76B /* ECPublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECPublicKey.swift; path = Sources/CryptorECC/ECPublicKey.swift; sourceTree = "<group>"; };
+		01CF4290D0458EDE8208B639D3F4EFDE /* SwiftyRSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyRSA.h; path = Source/SwiftyRSA.h; sourceTree = "<group>"; };
+		02A2A75CE18605B659444A1097B8B996 /* QueryDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryDecoder.swift; path = Sources/KituraContracts/CodableQuery/QueryDecoder.swift; sourceTree = "<group>"; };
+		04C9C6E75B26AE57C8589A499FFBC5D5 /* CryptorRSAKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptorRSAKey.swift; path = Sources/CryptorRSA/CryptorRSAKey.swift; sourceTree = "<group>"; };
+		0751C88695F49EBF4B51DD89ED0FF9AE /* SSLPointerTricks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLPointerTricks.swift; path = Sources/Cryptor/SSLPointerTricks.swift; sourceTree = "<group>"; };
+		0C00B07A008187BAF04533609BBA2365 /* ClaimsOpenID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClaimsOpenID.swift; path = Sources/SwiftJWT/ClaimsExamples/ClaimsOpenID.swift; sourceTree = "<group>"; };
+		0C99398BC165FF45BF0740DDBC9453E5 /* BlueECC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BlueECC-Info.plist"; sourceTree = "<group>"; };
+		0DA4828908E30CE4A29CB9AD3A405635 /* SwiftyRSA */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyRSA; path = SwiftyRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF2AA497DAF2C29FA3EB06BDE44553F /* BlueCryptor */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BlueCryptor; path = Cryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		139AA818677C505966AF9081D330D8AF /* BodyEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BodyEncoder.swift; path = Sources/KituraContracts/BodyEncoder.swift; sourceTree = "<group>"; };
+		14722F5E7ECE92C52FBC00D13C2A78E2 /* BlueCryptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueCryptor-umbrella.h"; sourceTree = "<group>"; };
+		158251CC907F63BAE8A610CAC4CBE186 /* BlueRSA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueRSA.debug.xcconfig; sourceTree = "<group>"; };
+		15C2788F89DBC08F7A88C9423429C2D4 /* PKCS7_AppleReceipt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7_AppleReceipt.swift; path = ASN1Decoder/PKCS7_AppleReceipt.swift; sourceTree = "<group>"; };
+		16F35B19F41841F2604952BCE175A01F /* BodyFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BodyFormat.swift; path = Sources/KituraContracts/BodyFormat.swift; sourceTree = "<group>"; };
+		170F8B4724A666DB82D252298758C051 /* Contracts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contracts.swift; path = Sources/KituraContracts/Contracts.swift; sourceTree = "<group>"; };
+		1782355CE1A3DB7EFBE6F86E71D0B461 /* Pods-JWTDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JWTDemo"; path = Pods_JWTDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		183C0B289B6979534878044A4C9AD67F /* X509Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = X509Extension.swift; path = ASN1Decoder/X509Extension.swift; sourceTree = "<group>"; };
+		183C81AAB86AD164A7A93442852E1C07 /* Logging-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Logging-Info.plist"; sourceTree = "<group>"; };
+		186E895C282D805E79F38EAD48FC44C6 /* SwiftyRSA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyRSA.release.xcconfig; sourceTree = "<group>"; };
+		1977E358C07585C7800828F4F4C6D234 /* ASN1Decoder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ASN1Decoder-Info.plist"; sourceTree = "<group>"; };
+		1A286C863F6B1BA58BB2489540680CCE /* BlueCryptor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueCryptor.debug.xcconfig; sourceTree = "<group>"; };
+		240F90A0C3BE0E96F4521AF7785B19F9 /* SwiftJWT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftJWT.modulemap; sourceTree = "<group>"; };
+		25C4B2D199EA8D57FAA2EF84B4D8B17D /* Coder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coder.swift; path = Sources/KituraContracts/CodableQuery/Coder.swift; sourceTree = "<group>"; };
+		267E26ACF2E19A6802055BC1A93E5D77 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Sources/Cryptor/Utilities.swift; sourceTree = "<group>"; };
+		2828545C9527A17811E0037A8B0C3338 /* OpenSSL.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = OpenSSL.xcframework; path = Frameworks/OpenSSL.xcframework; sourceTree = "<group>"; };
+		289935703D1DF32F0E9AA4FEFDE9775F /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = ASN1Decoder/PKCS7.swift; sourceTree = "<group>"; };
+		295329A98FA3E8AD9315CFF9C0959038 /* X509ExtensionClasses.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = X509ExtensionClasses.swift; path = ASN1Decoder/X509ExtensionClasses.swift; sourceTree = "<group>"; };
+		29755340494AF67C7FA91BD223E16F80 /* BlueECC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueECC.release.xcconfig; sourceTree = "<group>"; };
+		2A0F7CA70A7FEF2485291E9C43B5AF5E /* LoggerAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoggerAPI-umbrella.h"; sourceTree = "<group>"; };
+		2B1A98AC425E43DC3B6CFE1CA81403EF /* BlueRSA.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BlueRSA.modulemap; sourceTree = "<group>"; };
+		2B3EE0CEF4A2A3D15D4862F2438C7184 /* ASN1Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1Identifier.swift; path = ASN1Decoder/ASN1Identifier.swift; sourceTree = "<group>"; };
+		2B4C6D2B2771382D6393F9E5E8BE5169 /* PKCS7_Signature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7_Signature.swift; path = ASN1Decoder/PKCS7_Signature.swift; sourceTree = "<group>"; };
+		2D0C9C63CF609F1C6F37CD7FC4B6213D /* CertificateSigningRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CertificateSigningRequest; path = CertificateSigningRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1A99EC18F317E72AB1732C88116EF7 /* ASN1Decoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ASN1Decoder.modulemap; sourceTree = "<group>"; };
+		2EA1B088B356132335D8E03F69A60FFD /* BodyDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BodyDecoder.swift; path = Sources/KituraContracts/BodyDecoder.swift; sourceTree = "<group>"; };
+		304F3A08EF8F0B1FBCE1C05CB62B0616 /* SwiftyRSA-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyRSA-Info.plist"; sourceTree = "<group>"; };
+		3216874BC98B86185AE3FF98BA1D2A93 /* SSLPointerTricks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLPointerTricks.swift; path = Sources/CryptorECC/SSLPointerTricks.swift; sourceTree = "<group>"; };
+		33D87212C0ED0C66F96B5643AFE0DA20 /* OID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OID.swift; path = ASN1Decoder/OID.swift; sourceTree = "<group>"; };
+		350E82A7C588F93A23BC4FFA3D8AE3FC /* CertificateSigningRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CertificateSigningRequest.modulemap; sourceTree = "<group>"; };
+		3A8091561C72FA78CB1C1260D78D5F6C /* CryptorRSAConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptorRSAConstants.swift; path = Sources/CryptorRSA/CryptorRSAConstants.swift; sourceTree = "<group>"; };
+		3B80FF39CD2466B180B937C3392800E2 /* QueryEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryEncoder.swift; path = Sources/KituraContracts/CodableQuery/QueryEncoder.swift; sourceTree = "<group>"; };
+		3CD311955638BD1116A9E13215AF802A /* ASN1Decoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASN1Decoder-umbrella.h"; sourceTree = "<group>"; };
+		3EE2E666B40EA61FE21ED18D50A790CF /* KituraContracts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KituraContracts.release.xcconfig; sourceTree = "<group>"; };
+		409E8A89130142D61A7E21C06C4AFC82 /* BlueECC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BlueECC.modulemap; sourceTree = "<group>"; };
+		4315A235ABD316E278BFAD3549853A9A /* OpenSSL-Universal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.release.xcconfig"; sourceTree = "<group>"; };
+		44596899E727788BFCECD6B75AD62AC7 /* CryptorRSADigest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptorRSADigest.swift; path = Sources/CryptorRSA/CryptorRSADigest.swift; sourceTree = "<group>"; };
+		455CE38E4C536CE447F22A33B582D178 /* KituraContracts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KituraContracts-umbrella.h"; sourceTree = "<group>"; };
+		45EA896C592A84E8F7DFF5568D40CA1C /* BlueRSA-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueRSA-umbrella.h"; sourceTree = "<group>"; };
+		465ED812ADF3188F41543E00B7774F69 /* SwiftJWT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftJWT-dummy.m"; sourceTree = "<group>"; };
+		4689CC27C141E0F61F765CC178D634D4 /* EllipticCurve.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EllipticCurve.swift; path = Sources/CryptorECC/EllipticCurve.swift; sourceTree = "<group>"; };
+		4995A0128121082DE09D08ADE63AC161 /* Pods-JWTDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWTDemo-dummy.m"; sourceTree = "<group>"; };
+		49B04B5C9350E39426CAB04DEC0B6505 /* SignerAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignerAlgorithm.swift; path = Sources/SwiftJWT/SignerAlgorithm.swift; sourceTree = "<group>"; };
+		4B2C6F6089E0F744CB5E4C1E3347ACC0 /* Logging-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Logging-dummy.m"; sourceTree = "<group>"; };
+		4F26EE90B825873C79D83933E8DACC67 /* LoggerAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LoggerAPI.modulemap; sourceTree = "<group>"; };
+		520DA081C64BD65D46C1943734EF4EAF /* Logging.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Logging.modulemap; sourceTree = "<group>"; };
+		53D3E35E7EB25621342FA0CA77C0167B /* BlueECC */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BlueECC; path = CryptorECC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		557F56F9E81E12BAE84FEBDCCF130E1D /* X509Certificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = X509Certificate.swift; path = Source/X509Certificate.swift; sourceTree = "<group>"; };
+		57084A6519574D14371F6C0E86C80C81 /* KituraContracts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KituraContracts-dummy.m"; sourceTree = "<group>"; };
+		58645184E697030E5F206F041D6B3DD6 /* PrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrivateKey.swift; path = Source/PrivateKey.swift; sourceTree = "<group>"; };
+		58FEFB1B3CD89B51B94B9B833AA160E4 /* SwiftJWT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftJWT-umbrella.h"; sourceTree = "<group>"; };
+		59BE4C0E27B49AB0CC8225E9817390F6 /* Data+Base64URLEncoded.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Base64URLEncoded.swift"; path = "Sources/SwiftJWT/Data+Base64URLEncoded.swift"; sourceTree = "<group>"; };
+		59CE430F27AFF6A1ABC990A19B237CCB /* CryptorRSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptorRSA.swift; path = Sources/CryptorRSA/CryptorRSA.swift; sourceTree = "<group>"; };
+		5BC6910280312C6B1480B9FEBA14C490 /* ECError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECError.swift; path = Sources/CryptorECC/ECError.swift; sourceTree = "<group>"; };
+		5CB18DDD975AE02F0BDDCF234706B9C6 /* Pods-JWTDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWTDemo.release.xcconfig"; sourceTree = "<group>"; };
+		60DCC0637D9755F2FC0B602801AA1AFA /* Pods-JWTDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JWTDemo.modulemap"; sourceTree = "<group>"; };
+		62313944BDBC7EB85E01C8DBD67F7E9D /* JWTEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTEncoder.swift; path = Sources/SwiftJWT/JWTEncoder.swift; sourceTree = "<group>"; };
+		630106F949EF407C3EFCFDDBDABA3C7F /* ASN1Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1Encoder.swift; path = ASN1Decoder/ASN1Encoder.swift; sourceTree = "<group>"; };
+		63A46ED6FC5B083876DF4EBD748B0108 /* BlueCryptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlueCryptor-dummy.m"; sourceTree = "<group>"; };
+		63E7E538153DA1F1E955AD85DC4FEA06 /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Sources/CryptorECC/Data+Extensions.swift"; sourceTree = "<group>"; };
+		65019B32AA1F91D07886990DDDF4BA7D /* ECSignature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECSignature.swift; path = Sources/CryptorECC/ECSignature.swift; sourceTree = "<group>"; };
+		659781A9D5AE64A71E435527137ADEE2 /* ASN1Object.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1Object.swift; path = ASN1Decoder/ASN1Object.swift; sourceTree = "<group>"; };
+		6787C6C43A74DD550FAB10047E1B62D9 /* OpenSSL-Universal-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OpenSSL-Universal-xcframeworks.sh"; sourceTree = "<group>"; };
+		679119B7C5DEBDE12E20887B8A2A114E /* KeyDerivation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyDerivation.swift; path = Sources/Cryptor/KeyDerivation.swift; sourceTree = "<group>"; };
+		68D5A2CCBBB0FF70AE54604F3093FFD0 /* Logging-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Logging-umbrella.h"; sourceTree = "<group>"; };
+		6A2B3823220BC238E3D9832D47D27CB6 /* CertificateSigningRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CertificateSigningRequest.debug.xcconfig; sourceTree = "<group>"; };
+		6AC428CC733A83A15A343354587370E7 /* ClearMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClearMessage.swift; path = Source/ClearMessage.swift; sourceTree = "<group>"; };
+		6AF30CBEBDDEB5169FDE1B9AA3628E94 /* BlueCryptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BlueCryptor.modulemap; sourceTree = "<group>"; };
+		6BCE0853A1909357BE5E08D4EFC73489 /* StreamCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamCryptor.swift; path = Sources/Cryptor/StreamCryptor.swift; sourceTree = "<group>"; };
+		6F15A2E3EF02A5D13CB04F32D39EB5EF /* KituraContracts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KituraContracts.debug.xcconfig; sourceTree = "<group>"; };
+		714F8B9CED9A2652E413F03B4995D479 /* Crypto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Crypto.swift; path = Sources/Cryptor/Crypto.swift; sourceTree = "<group>"; };
+		718234B4619DC0B38648BA14D43F98AB /* ECEncryptable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECEncryptable.swift; path = Sources/CryptorECC/ECEncryptable.swift; sourceTree = "<group>"; };
+		71985677CF3A6D6476F3F33CFFA13E0F /* LoggerAPI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LoggerAPI-Info.plist"; sourceTree = "<group>"; };
+		7528F090B30A13E413A3841F39CC4256 /* JWTError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTError.swift; path = Sources/SwiftJWT/JWTError.swift; sourceTree = "<group>"; };
+		75D2E7B2B02FFF0D5E00E78B8AF019FE /* BlueRSA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueRSA.release.xcconfig; sourceTree = "<group>"; };
+		75F9CCCAEE32437B63C8DC9C7CFDE741 /* ASN1DistinguishedNames.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1DistinguishedNames.swift; path = ASN1Decoder/ASN1DistinguishedNames.swift; sourceTree = "<group>"; };
+		7645CE7C5EAD576BC2C8DBE3AEF4D4DE /* ECDecryptable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECDecryptable.swift; path = Sources/CryptorECC/ECDecryptable.swift; sourceTree = "<group>"; };
+		77F2538D0D5653168B3839712054AEF5 /* JWTVerifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTVerifier.swift; path = Sources/SwiftJWT/JWTVerifier.swift; sourceTree = "<group>"; };
+		7AC73B8AB1463A92DF8892B69BA2AFF1 /* Logging-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Logging-prefix.pch"; sourceTree = "<group>"; };
+		7BBB958457366AD7EEC94A8FE01DB9FB /* BlueCryptor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BlueCryptor-Info.plist"; sourceTree = "<group>"; };
+		7E3873454C8B7A1AF03E18298F706C58 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Sources/LoggerAPI/Logger.swift; sourceTree = "<group>"; };
+		7E735FB7B4613EFD89B79BC261B2963D /* BlueECC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlueECC-dummy.m"; sourceTree = "<group>"; };
+		7EA50EABAB26E62A37EE50440894A67A /* Pods-JWTDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JWTDemo-umbrella.h"; sourceTree = "<group>"; };
+		800C5E589A0065A42D5539E65F506CD1 /* CertificateSigningRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CertificateSigningRequest.release.xcconfig; sourceTree = "<group>"; };
+		819C5DBA1D027CB41E66303CAB37EF0B /* LoggerAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoggerAPI.release.xcconfig; sourceTree = "<group>"; };
+		8308FDE171DC253321F573829AEDF943 /* OpenSSL-Universal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.debug.xcconfig"; sourceTree = "<group>"; };
+		83C1047061C154C84B777DEE638DB06B /* SSLPointerTricks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLPointerTricks.swift; path = Sources/CryptorRSA/SSLPointerTricks.swift; sourceTree = "<group>"; };
+		846D1D82A9A77A627CA61231596825D4 /* ASN1Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1Decoder.swift; path = ASN1Decoder/ASN1Decoder.swift; sourceTree = "<group>"; };
+		854789243B0AF7019F6C3D8334BFA02A /* BlueHMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlueHMAC.swift; path = Sources/SwiftJWT/BlueHMAC.swift; sourceTree = "<group>"; };
+		87041D65285674F3DE497C01A237F74D /* SwiftyRSAError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyRSAError.swift; path = Source/SwiftyRSAError.swift; sourceTree = "<group>"; };
+		88E6BBD10E1F7DCB2FE54F5976DCFADA /* Asn1Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asn1Parser.swift; path = Source/Asn1Parser.swift; sourceTree = "<group>"; };
+		892980DB4FFF0F96B38E2D6272DFCBB2 /* SwiftJWT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftJWT.debug.xcconfig; sourceTree = "<group>"; };
+		898617CDA0821A8E1D1DD2BE75D736D5 /* KituraContracts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KituraContracts-prefix.pch"; sourceTree = "<group>"; };
+		8B7A6269218EEA84536D249273A003F1 /* Key.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Key.swift; path = Source/Key.swift; sourceTree = "<group>"; };
+		8BAD501B2BB8DA634A5BA486901CD5F8 /* ASN1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1.swift; path = Sources/CryptorECC/ASN1.swift; sourceTree = "<group>"; };
+		8BB023FB440FD074993592D0F798479C /* CertificateSigningRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CertificateSigningRequest.swift; path = Sources/CertificateSigningRequest/CertificateSigningRequest.swift; sourceTree = "<group>"; };
+		8BC5C19351E361A8CD0E5A6E6E1C4BF6 /* BlueECC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueECC.debug.xcconfig; sourceTree = "<group>"; };
+		8EE798E675358C5F585DC89505584A2D /* Cryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptor.swift; path = Sources/Cryptor/Cryptor.swift; sourceTree = "<group>"; };
+		8F58232F8CD102FD19A40F3D9B076608 /* PublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublicKey.swift; path = Source/PublicKey.swift; sourceTree = "<group>"; };
+		909D1E56DB62A9ADD2B6673517536E39 /* Locks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locks.swift; path = Sources/Logging/Locks.swift; sourceTree = "<group>"; };
+		9215DC15BCC6309E3495F539673901D6 /* SwiftJWT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftJWT.release.xcconfig; sourceTree = "<group>"; };
+		92CF164175F17984CB9E4144E7901A37 /* NSData+SHA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SHA.h"; path = "Source/NSData+SHA.h"; sourceTree = "<group>"; };
+		952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9533CA0877D4542B78C045C44035F516 /* Logging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Logging.debug.xcconfig; sourceTree = "<group>"; };
+		958D515F2F1191C36AB38A68D19405C5 /* SwiftyRSA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyRSA-dummy.m"; sourceTree = "<group>"; };
+		960DADB278B77C4A1950834DEA3EBBBC /* Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = Sources/Logging/Logging.swift; sourceTree = "<group>"; };
+		9684E6209009A8A9A3DBA8708A38D3D8 /* BlueCryptor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueCryptor.release.xcconfig; sourceTree = "<group>"; };
+		97B3AD1B366B47BE4F41D7E19C107ED6 /* BlueRSA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlueRSA-dummy.m"; sourceTree = "<group>"; };
+		98BC9E646EFD6BA4F26334D06CF1B172 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/Cryptor/HMAC.swift; sourceTree = "<group>"; };
+		99360B028DB884FABE6D90CEBB5C3BF7 /* SwiftJWT-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftJWT-Info.plist"; sourceTree = "<group>"; };
+		9A9EA2017351C4D6FBB2F5971FC80342 /* X509ExtensionAltName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = X509ExtensionAltName.swift; path = ASN1Decoder/X509ExtensionAltName.swift; sourceTree = "<group>"; };
+		9B29ABC1D87F7F74CA692D29692FE0B1 /* LoggerAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoggerAPI.debug.xcconfig; sourceTree = "<group>"; };
+		9D0937C3ACABA1BA08723D16B2E7814F /* ClosureAliases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClosureAliases.swift; path = Sources/KituraContracts/ClosureAliases.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3B85B880B894F1FF5BAFD94E036CC04 /* LoggerAPI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LoggerAPI; path = LoggerAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5774A69AD97640308FFC20B4D0E9F07 /* BlueECC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueECC-umbrella.h"; sourceTree = "<group>"; };
+		A5CF16B4996DB7D0E4981082FB86ED82 /* BlueRSA */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BlueRSA; path = CryptorRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6513E0A6CB60623515716E73996F0F5 /* Logging */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Logging; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A65C25B25961982C65D20E0E3C8A6A5F /* SwiftyRSA+ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyRSA+ObjC.swift"; path = "Source/SwiftyRSA+ObjC.swift"; sourceTree = "<group>"; };
+		A6B44FE82365C8A79D0BABBB11B1B829 /* Status.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Status.swift; path = Sources/Cryptor/Status.swift; sourceTree = "<group>"; };
+		A7DB24CE9A7E0C397A246C5B5EE39A4F /* Signature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Signature.swift; path = Source/Signature.swift; sourceTree = "<group>"; };
+		AA51E6618267C1FABBC1BD11022E0773 /* CertificateSigningRequestConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CertificateSigningRequestConstants.swift; path = Sources/CertificateSigningRequest/CertificateSigningRequestConstants.swift; sourceTree = "<group>"; };
+		AFFC507504E6483945FF1CC07C175B87 /* X509Certificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = X509Certificate.swift; path = ASN1Decoder/X509Certificate.swift; sourceTree = "<group>"; };
+		B004F7CC6D556F3A0A381BD446E7A26D /* BlueECC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueECC-prefix.pch"; sourceTree = "<group>"; };
+		B14D113E4E47E8119530107ED9F64D27 /* ASN1Decoder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASN1Decoder.release.xcconfig; sourceTree = "<group>"; };
+		B33F0CC6F9D0BD2020415DD8D1F7CA04 /* CryptorRSAUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptorRSAUtilities.swift; path = Sources/CryptorRSA/CryptorRSAUtilities.swift; sourceTree = "<group>"; };
+		B3787EC9F57600D16AD61BF82B1DE7EA /* Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Random.swift; path = Sources/Cryptor/Random.swift; sourceTree = "<group>"; };
+		B5672DD83C1EF0AB4DCBEBF7073AF229 /* BlueRSA-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BlueRSA-Info.plist"; sourceTree = "<group>"; };
+		B57374CA29526E629A95F6C169BE5CC9 /* Header.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Header.swift; path = Sources/SwiftJWT/Header.swift; sourceTree = "<group>"; };
+		B8F137EE06DAF574DF1B3AA021CA02DC /* Pods-JWTDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWTDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B9B864AB2CBB370B15C0EB10ACA2146F /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Source/Message.swift; sourceTree = "<group>"; };
+		B9E276AB0F6AE3009D9751E19C8A0E0F /* KituraContracts */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KituraContracts; path = KituraContracts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA76BD158D768E30FA52858DFBF18C77 /* SwiftyRSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyRSA.swift; path = Source/SwiftyRSA.swift; sourceTree = "<group>"; };
+		C08DDCE17929ACE0CA8CDFA57D1D3F71 /* ECSignable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECSignable.swift; path = Sources/CryptorECC/ECSignable.swift; sourceTree = "<group>"; };
+		C1E598F4D904D06FD6C6E983BA3E8334 /* Digest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Digest.swift; path = Sources/Cryptor/Digest.swift; sourceTree = "<group>"; };
+		C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C470415E306DA730E0293664504E5098 /* SwiftyRSA-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyRSA-umbrella.h"; sourceTree = "<group>"; };
+		C49FEAD0772BFEFF1F33A517572204A5 /* LogHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogHandler.swift; path = Sources/Logging/LogHandler.swift; sourceTree = "<group>"; };
+		C5670FF83323F1107132AF6227807986 /* KituraContracts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KituraContracts.modulemap; sourceTree = "<group>"; };
+		C5754B0EF0E9352E069E55851712FD41 /* ASN1Decoder */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ASN1Decoder; path = ASN1Decoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C741751E545E1BF68FB49EA35425F58D /* JWTSigner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTSigner.swift; path = Sources/SwiftJWT/JWTSigner.swift; sourceTree = "<group>"; };
+		C750E9A65260FF73D19F0E5D78885181 /* SwiftyRSA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyRSA.debug.xcconfig; sourceTree = "<group>"; };
+		C79A189C28BC05F3955FBFB36E2990BC /* LoggerAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoggerAPI-dummy.m"; sourceTree = "<group>"; };
+		C84DBA45462199E3CEF13B24E3BB30AC /* RSAKeyType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSAKeyType.swift; path = Sources/SwiftJWT/RSAKeyType.swift; sourceTree = "<group>"; };
+		C88BD916E4A93E65D9CBFA6D10869858 /* BlueCryptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueCryptor-prefix.pch"; sourceTree = "<group>"; };
+		CB24FBCF0A3BBD0BA817C018261B56AA /* VerifierAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerifierAlgorithm.swift; path = Sources/SwiftJWT/VerifierAlgorithm.swift; sourceTree = "<group>"; };
+		D13EBE0E8B9CE7B213D705DEE2B17B99 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/KituraContracts/CodableQuery/Extensions.swift; sourceTree = "<group>"; };
+		D38C8FD328E3082E6AA0CAE159F94C3C /* ASN1Decoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASN1Decoder-dummy.m"; sourceTree = "<group>"; };
+		D3E5BCF148C80FBA823883A4C54F8CE9 /* SwiftyRSA.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyRSA.modulemap; sourceTree = "<group>"; };
+		D5E011D8AD8603675BA8A5634EC21B9B /* SwiftJWT */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftJWT; path = SwiftJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C84E6E56E9D005497064D90038CFAD /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = Sources/SwiftJWT/JWT.swift; sourceTree = "<group>"; };
+		D6E5EF7467EEDF7B449329000AEC8E75 /* ECPrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECPrivateKey.swift; path = Sources/CryptorECC/ECPrivateKey.swift; sourceTree = "<group>"; };
+		D77483887CA1353E3F674282F34DAA64 /* Pods-JWTDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JWTDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D803D55B92FE6F60188E74498B72A22B /* Pods-JWTDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWTDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		D9DEDD680D4E24906998087C6EC7FFD7 /* Updatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Updatable.swift; path = Sources/Cryptor/Updatable.swift; sourceTree = "<group>"; };
+		DA518D6AE263A7A0B760890E1EE536CB /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Sources/CryptorRSA/Data+Extensions.swift"; sourceTree = "<group>"; };
+		DDA46FF6B6E063AD2187BF182BE3E2AF /* SwiftJWT-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftJWT-prefix.pch"; sourceTree = "<group>"; };
+		DF597A6517DD59E9CE1043AC101AFB3D /* CertificateSigningRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CertificateSigningRequest-umbrella.h"; sourceTree = "<group>"; };
+		E05E040050B0F262EE97600A5614BAE8 /* NSData+SHA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SHA.m"; path = "Source/NSData+SHA.m"; sourceTree = "<group>"; };
+		E21842F48799C4FC05A7E4281F514FA3 /* ValidateClaimsResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidateClaimsResult.swift; path = Sources/SwiftJWT/ValidateClaimsResult.swift; sourceTree = "<group>"; };
+		E61E3CC358ADFA76571296DB79F5A794 /* BlueRSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlueRSA.swift; path = Sources/SwiftJWT/BlueRSA.swift; sourceTree = "<group>"; };
+		E91C0896B77B4DC27FF17B8279A41424 /* ClaimsStandardJWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClaimsStandardJWT.swift; path = Sources/SwiftJWT/ClaimsExamples/ClaimsStandardJWT.swift; sourceTree = "<group>"; };
+		E9AA962AB7EFF52E74D886426AEC2D6B /* ClaimsMicroProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClaimsMicroProfile.swift; path = Sources/SwiftJWT/ClaimsExamples/ClaimsMicroProfile.swift; sourceTree = "<group>"; };
+		E9F72F5157F856E78A170AC38FC67C80 /* ASN1Decoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASN1Decoder-prefix.pch"; sourceTree = "<group>"; };
+		EA373F24B3ECF249FEB0E9DE98D39BAB /* CertificateSigningRequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CertificateSigningRequest-Info.plist"; sourceTree = "<group>"; };
+		EAFCEF7064CA9654AE55F161D5192A62 /* X509PublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = X509PublicKey.swift; path = ASN1Decoder/X509PublicKey.swift; sourceTree = "<group>"; };
+		EB2C73114CF453A770B1032286AB9634 /* Pods-JWTDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JWTDemo-frameworks.sh"; sourceTree = "<group>"; };
+		EBB69C2CCA65F1A2FD79B436952FC676 /* NoneAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoneAlgorithm.swift; path = Sources/SwiftJWT/NoneAlgorithm.swift; sourceTree = "<group>"; };
+		EE8C6116F94F5DB6125175D871313FA5 /* CryptorRSAErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptorRSAErrors.swift; path = Sources/CryptorRSA/CryptorRSAErrors.swift; sourceTree = "<group>"; };
+		EF034FD1B1D060DBC0AE26F3FF33B3B3 /* Pods-JWTDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWTDemo-Info.plist"; sourceTree = "<group>"; };
+		F0C0A52B067C852B8D14682E2F7EE6F3 /* BlueRSA-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueRSA-prefix.pch"; sourceTree = "<group>"; };
+		F1345FCA1A4F6AFB5B7F99836C7993FA /* Claims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Claims.swift; path = Sources/SwiftJWT/Claims.swift; sourceTree = "<group>"; };
+		F159AF55265ABA48F882A6AFDCCECECE /* CertificateSigningRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CertificateSigningRequest-prefix.pch"; sourceTree = "<group>"; };
+		F294E5F6CEBBEF514AD80D0B29A20778 /* KituraContracts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KituraContracts-Info.plist"; sourceTree = "<group>"; };
+		F2A510CE95F7B364DE5633554868AFD3 /* LoggerAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoggerAPI-prefix.pch"; sourceTree = "<group>"; };
+		F3147FB2DEDF06488FC57E853A892279 /* BlueECDSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlueECDSA.swift; path = Sources/SwiftJWT/BlueECDSA.swift; sourceTree = "<group>"; };
+		F38CCA46E0A6B22795736E7367A1FC4A /* EncryptedMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EncryptedMessage.swift; path = Source/EncryptedMessage.swift; sourceTree = "<group>"; };
+		F7623D3368151338B37198973A804151 /* ASN1Decoder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASN1Decoder.debug.xcconfig; sourceTree = "<group>"; };
+		F79449E9CB695B8020CBBDFA19C87149 /* Logging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Logging.release.xcconfig; sourceTree = "<group>"; };
+		F9FA246DBB85740E4F519DEA727B301F /* JWTDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTDecoder.swift; path = Sources/SwiftJWT/JWTDecoder.swift; sourceTree = "<group>"; };
+		FABC34F117102A97D94E4B90E52028EF /* SwiftyRSA-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyRSA-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FEBE4C79C58CB2EBAC0CF9528EB2DD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93771D67060533037C5E36F89CA0E6C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D4D1912D940DD74D67EF82711516237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E325948F030FAB2C99751C55CFB1344 /* Foundation.framework in Frameworks */,
+				7FDAF776B7DA00B35D3CE2FE51268833 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328D9762612ED966D12B6503AE8C8720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B1ED39638712D17BE9FBCAAFEF1468E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		351BF83C8E88B7F98B7785E6097B0C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999C450CCAC0C2F31E791BCA12D700CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35EB6959B1A83F4FDCF770E79EB3DFF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DB7EED4A562BF27D699AC7D1DC14EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3746611945B28D827B2D3AC1C7FCC633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66A47BA41C21A3437906D969DA8765BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D439DCB1BDA5936E3D8B7696F38675E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C610C7D71A2416595B2D172BCBC8944 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06267CBEDC638D9B908833ECAF3E195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7326CA047952CBD38697917BAB8E0A5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4ACB3447ACC697712FB82D1F826EA6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552A488AA665EDA3778FD07705402F43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E421BC0AC2E82B0A01E91D37F5676C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340531AF18F47A75B9688E6294534804 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8641C352248614128D0F0AA4467DA34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2A998AD60A9C8653AB550B8411C2E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03D0E706513D8B99319C221C88B59A64 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B1A98AC425E43DC3B6CFE1CA81403EF /* BlueRSA.modulemap */,
+				97B3AD1B366B47BE4F41D7E19C107ED6 /* BlueRSA-dummy.m */,
+				B5672DD83C1EF0AB4DCBEBF7073AF229 /* BlueRSA-Info.plist */,
+				F0C0A52B067C852B8D14682E2F7EE6F3 /* BlueRSA-prefix.pch */,
+				45EA896C592A84E8F7DFF5568D40CA1C /* BlueRSA-umbrella.h */,
+				158251CC907F63BAE8A610CAC4CBE186 /* BlueRSA.debug.xcconfig */,
+				75D2E7B2B02FFF0D5E00E78B8AF019FE /* BlueRSA.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BlueRSA";
+			sourceTree = "<group>";
+		};
+		07A37288308C985D3C15E205FB1FE4FF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				409E8A89130142D61A7E21C06C4AFC82 /* BlueECC.modulemap */,
+				7E735FB7B4613EFD89B79BC261B2963D /* BlueECC-dummy.m */,
+				0C99398BC165FF45BF0740DDBC9453E5 /* BlueECC-Info.plist */,
+				B004F7CC6D556F3A0A381BD446E7A26D /* BlueECC-prefix.pch */,
+				A5774A69AD97640308FFC20B4D0E9F07 /* BlueECC-umbrella.h */,
+				8BC5C19351E361A8CD0E5A6E6E1C4BF6 /* BlueECC.debug.xcconfig */,
+				29755340494AF67C7FA91BD223E16F80 /* BlueECC.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BlueECC";
+			sourceTree = "<group>";
+		};
+		10FCD0BAAFAFC9EAC18529288DF47DA8 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				909D1E56DB62A9ADD2B6673517536E39 /* Locks.swift */,
+				960DADB278B77C4A1950834DEA3EBBBC /* Logging.swift */,
+				C49FEAD0772BFEFF1F33A517572204A5 /* LogHandler.swift */,
+				6758E3EA32D3297C904C6D4242999082 /* Support Files */,
+			);
+			name = Logging;
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CE426AC267333500FABE7BA0A5A42A0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CDB7BDA1D29562444429E307386DC86 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				240F90A0C3BE0E96F4521AF7785B19F9 /* SwiftJWT.modulemap */,
+				465ED812ADF3188F41543E00B7774F69 /* SwiftJWT-dummy.m */,
+				99360B028DB884FABE6D90CEBB5C3BF7 /* SwiftJWT-Info.plist */,
+				DDA46FF6B6E063AD2187BF182BE3E2AF /* SwiftJWT-prefix.pch */,
+				58FEFB1B3CD89B51B94B9B833AA160E4 /* SwiftJWT-umbrella.h */,
+				892980DB4FFF0F96B38E2D6272DFCBB2 /* SwiftJWT.debug.xcconfig */,
+				9215DC15BCC6309E3495F539673901D6 /* SwiftJWT.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftJWT";
+			sourceTree = "<group>";
+		};
+		3F615BB8BF9E028196BE1BF8A851C8AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2828545C9527A17811E0037A8B0C3338 /* OpenSSL.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		430CEB790EF4EE7652AB1CA3D3C30877 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F26EE90B825873C79D83933E8DACC67 /* LoggerAPI.modulemap */,
+				C79A189C28BC05F3955FBFB36E2990BC /* LoggerAPI-dummy.m */,
+				71985677CF3A6D6476F3F33CFFA13E0F /* LoggerAPI-Info.plist */,
+				F2A510CE95F7B364DE5633554868AFD3 /* LoggerAPI-prefix.pch */,
+				2A0F7CA70A7FEF2485291E9C43B5AF5E /* LoggerAPI-umbrella.h */,
+				9B29ABC1D87F7F74CA692D29692FE0B1 /* LoggerAPI.debug.xcconfig */,
+				819C5DBA1D027CB41E66303CAB37EF0B /* LoggerAPI.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LoggerAPI";
+			sourceTree = "<group>";
+		};
+		4BC2546BC22AECBA41D64ECB96A135B1 /* BlueRSA */ = {
+			isa = PBXGroup;
+			children = (
+				59CE430F27AFF6A1ABC990A19B237CCB /* CryptorRSA.swift */,
+				3A8091561C72FA78CB1C1260D78D5F6C /* CryptorRSAConstants.swift */,
+				44596899E727788BFCECD6B75AD62AC7 /* CryptorRSADigest.swift */,
+				EE8C6116F94F5DB6125175D871313FA5 /* CryptorRSAErrors.swift */,
+				04C9C6E75B26AE57C8589A499FFBC5D5 /* CryptorRSAKey.swift */,
+				B33F0CC6F9D0BD2020415DD8D1F7CA04 /* CryptorRSAUtilities.swift */,
+				DA518D6AE263A7A0B760890E1EE536CB /* Data+Extensions.swift */,
+				83C1047061C154C84B777DEE638DB06B /* SSLPointerTricks.swift */,
+				03D0E706513D8B99319C221C88B59A64 /* Support Files */,
+			);
+			name = BlueRSA;
+			path = BlueRSA;
+			sourceTree = "<group>";
+		};
+		52417C294F219CA0E23148B8077E3181 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6787C6C43A74DD550FAB10047E1B62D9 /* OpenSSL-Universal-xcframeworks.sh */,
+				8308FDE171DC253321F573829AEDF943 /* OpenSSL-Universal.debug.xcconfig */,
+				4315A235ABD316E278BFAD3549853A9A /* OpenSSL-Universal.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OpenSSL-Universal";
+			sourceTree = "<group>";
+		};
+		5CA87887310E831DF0B2998AEF32968C /* SwiftyRSA */ = {
+			isa = PBXGroup;
+			children = (
+				88E6BBD10E1F7DCB2FE54F5976DCFADA /* Asn1Parser.swift */,
+				6AC428CC733A83A15A343354587370E7 /* ClearMessage.swift */,
+				F38CCA46E0A6B22795736E7367A1FC4A /* EncryptedMessage.swift */,
+				8B7A6269218EEA84536D249273A003F1 /* Key.swift */,
+				B9B864AB2CBB370B15C0EB10ACA2146F /* Message.swift */,
+				92CF164175F17984CB9E4144E7901A37 /* NSData+SHA.h */,
+				E05E040050B0F262EE97600A5614BAE8 /* NSData+SHA.m */,
+				58645184E697030E5F206F041D6B3DD6 /* PrivateKey.swift */,
+				8F58232F8CD102FD19A40F3D9B076608 /* PublicKey.swift */,
+				A7DB24CE9A7E0C397A246C5B5EE39A4F /* Signature.swift */,
+				01CF4290D0458EDE8208B639D3F4EFDE /* SwiftyRSA.h */,
+				BA76BD158D768E30FA52858DFBF18C77 /* SwiftyRSA.swift */,
+				87041D65285674F3DE497C01A237F74D /* SwiftyRSAError.swift */,
+				557F56F9E81E12BAE84FEBDCCF130E1D /* X509Certificate.swift */,
+				9E1EAD4FC05ECF67766A56792FD7ED2E /* ObjC */,
+				7032EAF8592AEE166B8FFE9A6DE1DD07 /* Support Files */,
+			);
+			name = SwiftyRSA;
+			path = SwiftyRSA;
+			sourceTree = "<group>";
+		};
+		6758E3EA32D3297C904C6D4242999082 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				520DA081C64BD65D46C1943734EF4EAF /* Logging.modulemap */,
+				4B2C6F6089E0F744CB5E4C1E3347ACC0 /* Logging-dummy.m */,
+				183C81AAB86AD164A7A93442852E1C07 /* Logging-Info.plist */,
+				7AC73B8AB1463A92DF8892B69BA2AFF1 /* Logging-prefix.pch */,
+				68D5A2CCBBB0FF70AE54604F3093FFD0 /* Logging-umbrella.h */,
+				9533CA0877D4542B78C045C44035F516 /* Logging.debug.xcconfig */,
+				F79449E9CB695B8020CBBDFA19C87149 /* Logging.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Logging";
+			sourceTree = "<group>";
+		};
+		6B7267F6CE584F20C1BA150D7141FA83 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				350E82A7C588F93A23BC4FFA3D8AE3FC /* CertificateSigningRequest.modulemap */,
+				0058C6E01E70E9E9A0CFF1900EB0A994 /* CertificateSigningRequest-dummy.m */,
+				EA373F24B3ECF249FEB0E9DE98D39BAB /* CertificateSigningRequest-Info.plist */,
+				F159AF55265ABA48F882A6AFDCCECECE /* CertificateSigningRequest-prefix.pch */,
+				DF597A6517DD59E9CE1043AC101AFB3D /* CertificateSigningRequest-umbrella.h */,
+				6A2B3823220BC238E3D9832D47D27CB6 /* CertificateSigningRequest.debug.xcconfig */,
+				800C5E589A0065A42D5539E65F506CD1 /* CertificateSigningRequest.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CertificateSigningRequest";
+			sourceTree = "<group>";
+		};
+		6E4498E6BF617A5398F75ACA4D3ED0B2 /* LoggerAPI */ = {
+			isa = PBXGroup;
+			children = (
+				7E3873454C8B7A1AF03E18298F706C58 /* Logger.swift */,
+				430CEB790EF4EE7652AB1CA3D3C30877 /* Support Files */,
+			);
+			name = LoggerAPI;
+			path = LoggerAPI;
+			sourceTree = "<group>";
+		};
+		6F7FA7E15FED16552C03FF56A5498412 /* Pods-JWTDemo */ = {
+			isa = PBXGroup;
+			children = (
+				60DCC0637D9755F2FC0B602801AA1AFA /* Pods-JWTDemo.modulemap */,
+				D77483887CA1353E3F674282F34DAA64 /* Pods-JWTDemo-acknowledgements.markdown */,
+				D803D55B92FE6F60188E74498B72A22B /* Pods-JWTDemo-acknowledgements.plist */,
+				4995A0128121082DE09D08ADE63AC161 /* Pods-JWTDemo-dummy.m */,
+				EB2C73114CF453A770B1032286AB9634 /* Pods-JWTDemo-frameworks.sh */,
+				EF034FD1B1D060DBC0AE26F3FF33B3B3 /* Pods-JWTDemo-Info.plist */,
+				7EA50EABAB26E62A37EE50440894A67A /* Pods-JWTDemo-umbrella.h */,
+				B8F137EE06DAF574DF1B3AA021CA02DC /* Pods-JWTDemo.debug.xcconfig */,
+				5CB18DDD975AE02F0BDDCF234706B9C6 /* Pods-JWTDemo.release.xcconfig */,
+			);
+			name = "Pods-JWTDemo";
+			path = "Target Support Files/Pods-JWTDemo";
+			sourceTree = "<group>";
+		};
+		7032EAF8592AEE166B8FFE9A6DE1DD07 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3E5BCF148C80FBA823883A4C54F8CE9 /* SwiftyRSA.modulemap */,
+				958D515F2F1191C36AB38A68D19405C5 /* SwiftyRSA-dummy.m */,
+				304F3A08EF8F0B1FBCE1C05CB62B0616 /* SwiftyRSA-Info.plist */,
+				FABC34F117102A97D94E4B90E52028EF /* SwiftyRSA-prefix.pch */,
+				C470415E306DA730E0293664504E5098 /* SwiftyRSA-umbrella.h */,
+				C750E9A65260FF73D19F0E5D78885181 /* SwiftyRSA.debug.xcconfig */,
+				186E895C282D805E79F38EAD48FC44C6 /* SwiftyRSA.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyRSA";
+			sourceTree = "<group>";
+		};
+		7CE426AC267333500FABE7BA0A5A42A0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				952925E838A0DE4D7BDC4EE54022633D /* Foundation.framework */,
+				C3B2A0B779CE31153B2C0D8A7F8DC7FE /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		83BFAF98B736A6FD1400C11FDE3562A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E1A99EC18F317E72AB1732C88116EF7 /* ASN1Decoder.modulemap */,
+				D38C8FD328E3082E6AA0CAE159F94C3C /* ASN1Decoder-dummy.m */,
+				1977E358C07585C7800828F4F4C6D234 /* ASN1Decoder-Info.plist */,
+				E9F72F5157F856E78A170AC38FC67C80 /* ASN1Decoder-prefix.pch */,
+				3CD311955638BD1116A9E13215AF802A /* ASN1Decoder-umbrella.h */,
+				F7623D3368151338B37198973A804151 /* ASN1Decoder.debug.xcconfig */,
+				B14D113E4E47E8119530107ED9F64D27 /* ASN1Decoder.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ASN1Decoder";
+			sourceTree = "<group>";
+		};
+		8D777A91DFF8A6A9EFCED592235CC5CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0C09097B931838C8B6CFBB2E818613C /* ASN1Decoder */,
+				C1E3EF36FBEBF7A5515858E8B3C3ABAD /* BlueCryptor */,
+				BEFD62D7948B24F17C9AFE13376ECDA4 /* BlueECC */,
+				4BC2546BC22AECBA41D64ECB96A135B1 /* BlueRSA */,
+				DE0431BFFF213B6549E05578C9C750EC /* CertificateSigningRequest */,
+				DA84694E5D400C6B428DB56ACBC96232 /* KituraContracts */,
+				6E4498E6BF617A5398F75ACA4D3ED0B2 /* LoggerAPI */,
+				10FCD0BAAFAFC9EAC18529288DF47DA8 /* Logging */,
+				EC2D455433D3F6C527E8C99B68A9D6AD /* OpenSSL-Universal */,
+				FC23FCC80386C92D465A922827BA84CA /* SwiftJWT */,
+				5CA87887310E831DF0B2998AEF32968C /* SwiftyRSA */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		942DB29AA765F352C62FAFFDB4A6B4E7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AF30CBEBDDEB5169FDE1B9AA3628E94 /* BlueCryptor.modulemap */,
+				63A46ED6FC5B083876DF4EBD748B0108 /* BlueCryptor-dummy.m */,
+				7BBB958457366AD7EEC94A8FE01DB9FB /* BlueCryptor-Info.plist */,
+				C88BD916E4A93E65D9CBFA6D10869858 /* BlueCryptor-prefix.pch */,
+				14722F5E7ECE92C52FBC00D13C2A78E2 /* BlueCryptor-umbrella.h */,
+				1A286C863F6B1BA58BB2489540680CCE /* BlueCryptor.debug.xcconfig */,
+				9684E6209009A8A9A3DBA8708A38D3D8 /* BlueCryptor.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BlueCryptor";
+			sourceTree = "<group>";
+		};
+		9DB18C2130DE00DF327DB968A1B74A2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5754B0EF0E9352E069E55851712FD41 /* ASN1Decoder */,
+				0EF2AA497DAF2C29FA3EB06BDE44553F /* BlueCryptor */,
+				53D3E35E7EB25621342FA0CA77C0167B /* BlueECC */,
+				A5CF16B4996DB7D0E4981082FB86ED82 /* BlueRSA */,
+				2D0C9C63CF609F1C6F37CD7FC4B6213D /* CertificateSigningRequest */,
+				B9E276AB0F6AE3009D9751E19C8A0E0F /* KituraContracts */,
+				A3B85B880B894F1FF5BAFD94E036CC04 /* LoggerAPI */,
+				A6513E0A6CB60623515716E73996F0F5 /* Logging */,
+				1782355CE1A3DB7EFBE6F86E71D0B461 /* Pods-JWTDemo */,
+				D5E011D8AD8603675BA8A5634EC21B9B /* SwiftJWT */,
+				0DA4828908E30CE4A29CB9AD3A405635 /* SwiftyRSA */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E1EAD4FC05ECF67766A56792FD7ED2E /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				A65C25B25961982C65D20E0E3C8A6A5F /* SwiftyRSA+ObjC.swift */,
+			);
+			name = ObjC;
+			sourceTree = "<group>";
+		};
+		BEFD62D7948B24F17C9AFE13376ECDA4 /* BlueECC */ = {
+			isa = PBXGroup;
+			children = (
+				8BAD501B2BB8DA634A5BA486901CD5F8 /* ASN1.swift */,
+				63E7E538153DA1F1E955AD85DC4FEA06 /* Data+Extensions.swift */,
+				7645CE7C5EAD576BC2C8DBE3AEF4D4DE /* ECDecryptable.swift */,
+				718234B4619DC0B38648BA14D43F98AB /* ECEncryptable.swift */,
+				5BC6910280312C6B1480B9FEBA14C490 /* ECError.swift */,
+				D6E5EF7467EEDF7B449329000AEC8E75 /* ECPrivateKey.swift */,
+				00A1BD375C24ACE1BF5D52EE8E5CC76B /* ECPublicKey.swift */,
+				C08DDCE17929ACE0CA8CDFA57D1D3F71 /* ECSignable.swift */,
+				65019B32AA1F91D07886990DDDF4BA7D /* ECSignature.swift */,
+				4689CC27C141E0F61F765CC178D634D4 /* EllipticCurve.swift */,
+				3216874BC98B86185AE3FF98BA1D2A93 /* SSLPointerTricks.swift */,
+				07A37288308C985D3C15E205FB1FE4FF /* Support Files */,
+			);
+			name = BlueECC;
+			path = BlueECC;
+			sourceTree = "<group>";
+		};
+		C1E3EF36FBEBF7A5515858E8B3C3ABAD /* BlueCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				714F8B9CED9A2652E413F03B4995D479 /* Crypto.swift */,
+				8EE798E675358C5F585DC89505584A2D /* Cryptor.swift */,
+				C1E598F4D904D06FD6C6E983BA3E8334 /* Digest.swift */,
+				98BC9E646EFD6BA4F26334D06CF1B172 /* HMAC.swift */,
+				679119B7C5DEBDE12E20887B8A2A114E /* KeyDerivation.swift */,
+				B3787EC9F57600D16AD61BF82B1DE7EA /* Random.swift */,
+				0751C88695F49EBF4B51DD89ED0FF9AE /* SSLPointerTricks.swift */,
+				A6B44FE82365C8A79D0BABBB11B1B829 /* Status.swift */,
+				6BCE0853A1909357BE5E08D4EFC73489 /* StreamCryptor.swift */,
+				D9DEDD680D4E24906998087C6EC7FFD7 /* Updatable.swift */,
+				267E26ACF2E19A6802055BC1A93E5D77 /* Utilities.swift */,
+				942DB29AA765F352C62FAFFDB4A6B4E7 /* Support Files */,
+			);
+			name = BlueCryptor;
+			path = BlueCryptor;
+			sourceTree = "<group>";
+		};
+		C5E23342BA936AB18CBDAC09EB413ADF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5670FF83323F1107132AF6227807986 /* KituraContracts.modulemap */,
+				57084A6519574D14371F6C0E86C80C81 /* KituraContracts-dummy.m */,
+				F294E5F6CEBBEF514AD80D0B29A20778 /* KituraContracts-Info.plist */,
+				898617CDA0821A8E1D1DD2BE75D736D5 /* KituraContracts-prefix.pch */,
+				455CE38E4C536CE447F22A33B582D178 /* KituraContracts-umbrella.h */,
+				6F15A2E3EF02A5D13CB04F32D39EB5EF /* KituraContracts.debug.xcconfig */,
+				3EE2E666B40EA61FE21ED18D50A790CF /* KituraContracts.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KituraContracts";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				8D777A91DFF8A6A9EFCED592235CC5CB /* Pods */,
+				9DB18C2130DE00DF327DB968A1B74A2D /* Products */,
+				E5B1C53A4CC5176C232A4E8AE0BB1946 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DA84694E5D400C6B428DB56ACBC96232 /* KituraContracts */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1B088B356132335D8E03F69A60FFD /* BodyDecoder.swift */,
+				139AA818677C505966AF9081D330D8AF /* BodyEncoder.swift */,
+				16F35B19F41841F2604952BCE175A01F /* BodyFormat.swift */,
+				9D0937C3ACABA1BA08723D16B2E7814F /* ClosureAliases.swift */,
+				25C4B2D199EA8D57FAA2EF84B4D8B17D /* Coder.swift */,
+				170F8B4724A666DB82D252298758C051 /* Contracts.swift */,
+				D13EBE0E8B9CE7B213D705DEE2B17B99 /* Extensions.swift */,
+				02A2A75CE18605B659444A1097B8B996 /* QueryDecoder.swift */,
+				3B80FF39CD2466B180B937C3392800E2 /* QueryEncoder.swift */,
+				C5E23342BA936AB18CBDAC09EB413ADF /* Support Files */,
+			);
+			name = KituraContracts;
+			path = KituraContracts;
+			sourceTree = "<group>";
+		};
+		DE0431BFFF213B6549E05578C9C750EC /* CertificateSigningRequest */ = {
+			isa = PBXGroup;
+			children = (
+				8BB023FB440FD074993592D0F798479C /* CertificateSigningRequest.swift */,
+				AA51E6618267C1FABBC1BD11022E0773 /* CertificateSigningRequestConstants.swift */,
+				6B7267F6CE584F20C1BA150D7141FA83 /* Support Files */,
+			);
+			name = CertificateSigningRequest;
+			path = CertificateSigningRequest;
+			sourceTree = "<group>";
+		};
+		E0C09097B931838C8B6CFBB2E818613C /* ASN1Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				846D1D82A9A77A627CA61231596825D4 /* ASN1Decoder.swift */,
+				75F9CCCAEE32437B63C8DC9C7CFDE741 /* ASN1DistinguishedNames.swift */,
+				630106F949EF407C3EFCFDDBDABA3C7F /* ASN1Encoder.swift */,
+				2B3EE0CEF4A2A3D15D4862F2438C7184 /* ASN1Identifier.swift */,
+				659781A9D5AE64A71E435527137ADEE2 /* ASN1Object.swift */,
+				33D87212C0ED0C66F96B5643AFE0DA20 /* OID.swift */,
+				289935703D1DF32F0E9AA4FEFDE9775F /* PKCS7.swift */,
+				15C2788F89DBC08F7A88C9423429C2D4 /* PKCS7_AppleReceipt.swift */,
+				2B4C6D2B2771382D6393F9E5E8BE5169 /* PKCS7_Signature.swift */,
+				AFFC507504E6483945FF1CC07C175B87 /* X509Certificate.swift */,
+				183C0B289B6979534878044A4C9AD67F /* X509Extension.swift */,
+				9A9EA2017351C4D6FBB2F5971FC80342 /* X509ExtensionAltName.swift */,
+				295329A98FA3E8AD9315CFF9C0959038 /* X509ExtensionClasses.swift */,
+				EAFCEF7064CA9654AE55F161D5192A62 /* X509PublicKey.swift */,
+				83BFAF98B736A6FD1400C11FDE3562A4 /* Support Files */,
+			);
+			name = ASN1Decoder;
+			path = ASN1Decoder;
+			sourceTree = "<group>";
+		};
+		E5B1C53A4CC5176C232A4E8AE0BB1946 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F7FA7E15FED16552C03FF56A5498412 /* Pods-JWTDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EC2D455433D3F6C527E8C99B68A9D6AD /* OpenSSL-Universal */ = {
+			isa = PBXGroup;
+			children = (
+				3F615BB8BF9E028196BE1BF8A851C8AE /* Frameworks */,
+				52417C294F219CA0E23148B8077E3181 /* Support Files */,
+			);
+			name = "OpenSSL-Universal";
+			path = "OpenSSL-Universal";
+			sourceTree = "<group>";
+		};
+		FC23FCC80386C92D465A922827BA84CA /* SwiftJWT */ = {
+			isa = PBXGroup;
+			children = (
+				F3147FB2DEDF06488FC57E853A892279 /* BlueECDSA.swift */,
+				854789243B0AF7019F6C3D8334BFA02A /* BlueHMAC.swift */,
+				E61E3CC358ADFA76571296DB79F5A794 /* BlueRSA.swift */,
+				F1345FCA1A4F6AFB5B7F99836C7993FA /* Claims.swift */,
+				E9AA962AB7EFF52E74D886426AEC2D6B /* ClaimsMicroProfile.swift */,
+				0C00B07A008187BAF04533609BBA2365 /* ClaimsOpenID.swift */,
+				E91C0896B77B4DC27FF17B8279A41424 /* ClaimsStandardJWT.swift */,
+				59BE4C0E27B49AB0CC8225E9817390F6 /* Data+Base64URLEncoded.swift */,
+				B57374CA29526E629A95F6C169BE5CC9 /* Header.swift */,
+				D6C84E6E56E9D005497064D90038CFAD /* JWT.swift */,
+				F9FA246DBB85740E4F519DEA727B301F /* JWTDecoder.swift */,
+				62313944BDBC7EB85E01C8DBD67F7E9D /* JWTEncoder.swift */,
+				7528F090B30A13E413A3841F39CC4256 /* JWTError.swift */,
+				C741751E545E1BF68FB49EA35425F58D /* JWTSigner.swift */,
+				77F2538D0D5653168B3839712054AEF5 /* JWTVerifier.swift */,
+				EBB69C2CCA65F1A2FD79B436952FC676 /* NoneAlgorithm.swift */,
+				C84DBA45462199E3CEF13B24E3BB30AC /* RSAKeyType.swift */,
+				49B04B5C9350E39426CAB04DEC0B6505 /* SignerAlgorithm.swift */,
+				E21842F48799C4FC05A7E4281F514FA3 /* ValidateClaimsResult.swift */,
+				CB24FBCF0A3BBD0BA817C018261B56AA /* VerifierAlgorithm.swift */,
+				2CDB7BDA1D29562444429E307386DC86 /* Support Files */,
+			);
+			name = SwiftJWT;
+			path = SwiftJWT;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3A0A1CE0D1CE1D61F1C385B696476287 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E5ACD84B22B3D3D777DE097A8DF082 /* KituraContracts-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D874A84FF4835ADCAAAFE8EC4FBBDF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4DA0685B8685618DF2202C945A544E /* BlueECC-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD2FD0F657F1ADEF3C100145CDF6FA9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1252D6BEE3F2823D75624C64594DF113 /* CertificateSigningRequest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CCDE9410CF64ABFB4C994EA00E282A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF50DC751EB78BC4107C7A553A5CF92 /* BlueRSA-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		483528F309AEABCF53CEA0D7AB7BC1DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2695886313F517E6222ECB65F17B4E85 /* SwiftJWT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6992F490A1738E50020A6664649D4F78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E780E2817D5EE5F3BF72B0122E0811 /* Pods-JWTDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796A5BF5524EB9C05E563A75BAFF7EDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70CCAF64C2A4C50DF7F7E9E0E9ACA1CF /* Logging-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8C4FEE12BDF0ECE8597CD311017BE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B861510614F2C66A5390B3BE54AD29 /* ASN1Decoder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5BEA2210C9B3C3F939D30A23BB9F5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9108F028334A768CEFF16D732B48DA43 /* NSData+SHA.h in Headers */,
+				F9111CC8A5E124DEB21E7D6AC2544C49 /* SwiftyRSA.h in Headers */,
+				5E3A74F915978A7E264CF8C0ED8D289C /* SwiftyRSA-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9FCF5EED47008C2297DD13915FB238 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EDF0A2FA38DB263B4FBFE0818FC14B3 /* BlueCryptor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD42FE7BB5BD3EC3607AA256475B482A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51BC8682387F14B656F9BE487D2DAA7 /* LoggerAPI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2ABF3F8EC6CE525E1E02C51D72C64E94 /* Logging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B8E23DD274A87283A14E67C9D2B0EFC /* Build configuration list for PBXNativeTarget "Logging" */;
+			buildPhases = (
+				796A5BF5524EB9C05E563A75BAFF7EDB /* Headers */,
+				FC1525ED8705D0DF0A6BE71D7AF37E06 /* Sources */,
+				8D439DCB1BDA5936E3D8B7696F38675E /* Frameworks */,
+				C10BA228A71AD454AE8499C07A38697D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Logging;
+			productName = Logging;
+			productReference = A6513E0A6CB60623515716E73996F0F5 /* Logging */;
+			productType = "com.apple.product-type.framework";
+		};
+		3CA5FD5A45C3F901A76060FE0F4A9B5F /* BlueRSA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12BEBFE4FF4C9C0834ED6E2450BD21AC /* Build configuration list for PBXNativeTarget "BlueRSA" */;
+			buildPhases = (
+				40CCDE9410CF64ABFB4C994EA00E282A /* Headers */,
+				A77124DD555E84572F5CD6187B54FC24 /* Sources */,
+				328D9762612ED966D12B6503AE8C8720 /* Frameworks */,
+				7B0B5E9BC13A39437E795FD805116073 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueRSA;
+			productName = CryptorRSA;
+			productReference = A5CF16B4996DB7D0E4981082FB86ED82 /* BlueRSA */;
+			productType = "com.apple.product-type.framework";
+		};
+		4090B1B7FD0B799BF794751E6A9D826F /* LoggerAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 353854EABD3C9930FA73C80C43DFA9B9 /* Build configuration list for PBXNativeTarget "LoggerAPI" */;
+			buildPhases = (
+				FD42FE7BB5BD3EC3607AA256475B482A /* Headers */,
+				E858EDECABCB9018D407107F8BF32A0A /* Sources */,
+				351BF83C8E88B7F98B7785E6097B0C9E /* Frameworks */,
+				C66FC04324DD950EBCF716348CC16A00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60AA47A309C091946DDD719ECFE3491B /* PBXTargetDependency */,
+			);
+			name = LoggerAPI;
+			productName = LoggerAPI;
+			productReference = A3B85B880B894F1FF5BAFD94E036CC04 /* LoggerAPI */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B549D2432508CBFF6121EF8025357F0 /* Pods-JWTDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BE23C3BDBFA7356B810B1E7D4FFA73F /* Build configuration list for PBXNativeTarget "Pods-JWTDemo" */;
+			buildPhases = (
+				6992F490A1738E50020A6664649D4F78 /* Headers */,
+				9C5C114482696BB0B80010BE0686CD28 /* Sources */,
+				3746611945B28D827B2D3AC1C7FCC633 /* Frameworks */,
+				1892548BE9A8EF1278E177FB6D85F7D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE32D29CF2E5752E7C7E079E3D52431F /* PBXTargetDependency */,
+				B34FF8BA65C8E0E7E2B10AF747C49596 /* PBXTargetDependency */,
+				B21424343F4DB8AB33E23EC7B17ED9AE /* PBXTargetDependency */,
+				1DEADD57CD6CF7B770FBD675DFA1B82E /* PBXTargetDependency */,
+				171A78D571ED43077E5EC4E6FC1A3B54 /* PBXTargetDependency */,
+				97EC2A1F66BFF47E2C863557239F8B72 /* PBXTargetDependency */,
+				E8C3A25B2D841BAA8F228B172799993D /* PBXTargetDependency */,
+				A979081D79BE8A2806D2115F5FD251D6 /* PBXTargetDependency */,
+				D501F759C6F05A58A8DF75697DE65FDF /* PBXTargetDependency */,
+				C2B7F1CB2DE261ECECD7521913A0B176 /* PBXTargetDependency */,
+				DEF497375D5228B4006F01C12C89E03D /* PBXTargetDependency */,
+			);
+			name = "Pods-JWTDemo";
+			productName = Pods_JWTDemo;
+			productReference = 1782355CE1A3DB7EFBE6F86E71D0B461 /* Pods-JWTDemo */;
+			productType = "com.apple.product-type.framework";
+		};
+		921D74A1881BD89FA651ED7078F37128 /* KituraContracts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A64AF72071AF5E51B7A66AAA76306ED /* Build configuration list for PBXNativeTarget "KituraContracts" */;
+			buildPhases = (
+				3A0A1CE0D1CE1D61F1C385B696476287 /* Headers */,
+				EEFD65F27468CB3F0C6DFCE2C263CCFD /* Sources */,
+				0FEBE4C79C58CB2EBAC0CF9528EB2DD2 /* Frameworks */,
+				ECE18D6D82FC9DE718D971552DE58110 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70E52FA2323301ACCFC8BD0BB9FF9973 /* PBXTargetDependency */,
+			);
+			name = KituraContracts;
+			productName = KituraContracts;
+			productReference = B9E276AB0F6AE3009D9751E19C8A0E0F /* KituraContracts */;
+			productType = "com.apple.product-type.framework";
+		};
+		92A1C13902E7ACDA3ABB5BA1FEACC86C /* SwiftyRSA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B0A6BB48BBCB5E358060DA705675F4 /* Build configuration list for PBXNativeTarget "SwiftyRSA" */;
+			buildPhases = (
+				DA5BEA2210C9B3C3F939D30A23BB9F5D /* Headers */,
+				C1A673C08285363E7F416AD7C5BA7711 /* Sources */,
+				1D4D1912D940DD74D67EF82711516237 /* Frameworks */,
+				A3978EFC8CCBB3F6360B21E4B629C541 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyRSA;
+			productName = SwiftyRSA;
+			productReference = 0DA4828908E30CE4A29CB9AD3A405635 /* SwiftyRSA */;
+			productType = "com.apple.product-type.framework";
+		};
+		9FF604BE1801EF6B67EED51EDA9D63C9 /* BlueECC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7602F5D278AA2D1C563D4F665525B719 /* Build configuration list for PBXNativeTarget "BlueECC" */;
+			buildPhases = (
+				3D874A84FF4835ADCAAAFE8EC4FBBDF7 /* Headers */,
+				75C69CB4D38951ED9FD3D5A21C92AE02 /* Sources */,
+				E8641C352248614128D0F0AA4467DA34 /* Frameworks */,
+				1DBFD8A2B043DE36A0FF084059910CF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueECC;
+			productName = CryptorECC;
+			productReference = 53D3E35E7EB25621342FA0CA77C0167B /* BlueECC */;
+			productType = "com.apple.product-type.framework";
+		};
+		A13A3F9C75F44E357FDADF6E2FF8D15B /* CertificateSigningRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B11215514448F13B91E0753CBF215403 /* Build configuration list for PBXNativeTarget "CertificateSigningRequest" */;
+			buildPhases = (
+				3FD2FD0F657F1ADEF3C100145CDF6FA9 /* Headers */,
+				EFDEBC4A0D9A5D84E60108739A787390 /* Sources */,
+				35EB6959B1A83F4FDCF770E79EB3DFF7 /* Frameworks */,
+				FB10CBA5A95C2955DDA21FB84497AE01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CertificateSigningRequest;
+			productName = CertificateSigningRequest;
+			productReference = 2D0C9C63CF609F1C6F37CD7FC4B6213D /* CertificateSigningRequest */;
+			productType = "com.apple.product-type.framework";
+		};
+		A28ABE059EE78F37B646540BEAB934E0 /* BlueCryptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DAC03B644034D84EE2DFC8C5B6F83AC /* Build configuration list for PBXNativeTarget "BlueCryptor" */;
+			buildPhases = (
+				DC9FCF5EED47008C2297DD13915FB238 /* Headers */,
+				E5D193B2F29C460045D229E24EA65DDB /* Sources */,
+				B06267CBEDC638D9B908833ECAF3E195 /* Frameworks */,
+				8ECE089CB8D313C3B22AD14B673D4A62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueCryptor;
+			productName = Cryptor;
+			productReference = 0EF2AA497DAF2C29FA3EB06BDE44553F /* BlueCryptor */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE24E4A530A4D9EBE9D2077B7CAB688D /* ASN1Decoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5F149B592CA44C228894BBBA67AE196 /* Build configuration list for PBXNativeTarget "ASN1Decoder" */;
+			buildPhases = (
+				7E8C4FEE12BDF0ECE8597CD311017BE7 /* Headers */,
+				A8EAACEA4B0B6E2768699CC649A8CBE2 /* Sources */,
+				E421BC0AC2E82B0A01E91D37F5676C05 /* Frameworks */,
+				300BE2DBC9CB9C8EFCE64CAE4A2A62F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASN1Decoder;
+			productName = ASN1Decoder;
+			productReference = C5754B0EF0E9352E069E55851712FD41 /* ASN1Decoder */;
+			productType = "com.apple.product-type.framework";
+		};
+		E7F041D10DB8131E7E8B866AA3D62E32 /* SwiftJWT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D6D21B85F08E28672F2885BBF5D200 /* Build configuration list for PBXNativeTarget "SwiftJWT" */;
+			buildPhases = (
+				483528F309AEABCF53CEA0D7AB7BC1DA /* Headers */,
+				2B7B098787E66C510DDF19AE84EFDE07 /* Sources */,
+				C4ACB3447ACC697712FB82D1F826EA6D /* Frameworks */,
+				98D638507820B591087D3DB690ADB3C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37030B0E8C9FD0D01B165AC0AD33DA38 /* PBXTargetDependency */,
+				2E69300F8EF93B717D9186EAFAE6B786 /* PBXTargetDependency */,
+				B1BECEA632D8A1B28C69AB8C77CEBC42 /* PBXTargetDependency */,
+				BFFDB5C144EF7AD34E69022A83451046 /* PBXTargetDependency */,
+				DC5FF93D42BA645884E1E3F13A24223E /* PBXTargetDependency */,
+			);
+			name = SwiftJWT;
+			productName = SwiftJWT;
+			productReference = D5E011D8AD8603675BA8A5634EC21B9B /* SwiftJWT */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9DB18C2130DE00DF327DB968A1B74A2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE24E4A530A4D9EBE9D2077B7CAB688D /* ASN1Decoder */,
+				A28ABE059EE78F37B646540BEAB934E0 /* BlueCryptor */,
+				9FF604BE1801EF6B67EED51EDA9D63C9 /* BlueECC */,
+				3CA5FD5A45C3F901A76060FE0F4A9B5F /* BlueRSA */,
+				A13A3F9C75F44E357FDADF6E2FF8D15B /* CertificateSigningRequest */,
+				921D74A1881BD89FA651ED7078F37128 /* KituraContracts */,
+				4090B1B7FD0B799BF794751E6A9D826F /* LoggerAPI */,
+				2ABF3F8EC6CE525E1E02C51D72C64E94 /* Logging */,
+				B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */,
+				6B549D2432508CBFF6121EF8025357F0 /* Pods-JWTDemo */,
+				E7F041D10DB8131E7E8B866AA3D62E32 /* SwiftJWT */,
+				92A1C13902E7ACDA3ABB5BA1FEACC86C /* SwiftyRSA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1892548BE9A8EF1278E177FB6D85F7D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DBFD8A2B043DE36A0FF084059910CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300BE2DBC9CB9C8EFCE64CAE4A2A62F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B0B5E9BC13A39437E795FD805116073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECE089CB8D313C3B22AD14B673D4A62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D638507820B591087D3DB690ADB3C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3978EFC8CCBB3F6360B21E4B629C541 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10BA228A71AD454AE8499C07A38697D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C66FC04324DD950EBCF716348CC16A00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE18D6D82FC9DE718D971552DE58110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB10CBA5A95C2955DDA21FB84497AE01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DAEA2BAAFED7B7865CB41712646E4160 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/OpenSSL-Universal/OpenSSL-Universal-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/OpenSSL-Universal/OpenSSL-Universal-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/OpenSSL-Universal/OpenSSL-Universal-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B7B098787E66C510DDF19AE84EFDE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E1B0B6F334802C66E484E4AB564E96A /* BlueECDSA.swift in Sources */,
+				804CC711F5AA0EB4E00C9A993FEEB0CA /* BlueHMAC.swift in Sources */,
+				31394629250EE04C1D437CEAA9844825 /* BlueRSA.swift in Sources */,
+				106C9BE8D2D5BD88A722A83B881445AD /* Claims.swift in Sources */,
+				AA53DAEB5CA0378FED32961B2052A01B /* ClaimsMicroProfile.swift in Sources */,
+				8DC2C2BC0F42E9B820EB962B1D76644D /* ClaimsOpenID.swift in Sources */,
+				88626113053B820D5D65F7FF2841D541 /* ClaimsStandardJWT.swift in Sources */,
+				2C03C28338745B50B7E5956C03884CE0 /* Data+Base64URLEncoded.swift in Sources */,
+				7DDA219DF77250F5CBB3242438DAF486 /* Header.swift in Sources */,
+				2D7CC4DD61485FE8246D415A813A94DB /* JWT.swift in Sources */,
+				D29C9D92076A43DCCAF9F0FAE0911321 /* JWTDecoder.swift in Sources */,
+				0DA8A599A871E6A64B7B9E796B0F3308 /* JWTEncoder.swift in Sources */,
+				65345F2C02726D947133E79CCA5CA0CC /* JWTError.swift in Sources */,
+				ED737EB4F72FC3FA3CF93565FC349DD2 /* JWTSigner.swift in Sources */,
+				5BFED9BCB02678A257FD5D93176AC40E /* JWTVerifier.swift in Sources */,
+				5DD9B8B026B60B309CD0054BD6B74E8B /* NoneAlgorithm.swift in Sources */,
+				177809E275ECC628EE7CEF6F52B4411A /* RSAKeyType.swift in Sources */,
+				50AD6B8BBDAA111F49780DA337DEF57D /* SignerAlgorithm.swift in Sources */,
+				3109B5207E71C65D27B3E817A7B35698 /* SwiftJWT-dummy.m in Sources */,
+				2DF5E6E3C6C4011A9BCB21161BAA5E65 /* ValidateClaimsResult.swift in Sources */,
+				1BA4F0B05D6A17790291304AF7438DA5 /* VerifierAlgorithm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C69CB4D38951ED9FD3D5A21C92AE02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B316CFCCE7A94AC0024D0EC7552B3D /* ASN1.swift in Sources */,
+				214538563382AF40DEA798179B61330F /* BlueECC-dummy.m in Sources */,
+				459F1BDAF057FEDA89B5DC0F62CD6F36 /* Data+Extensions.swift in Sources */,
+				94256662B883B8D44E1424A6748CB18D /* ECDecryptable.swift in Sources */,
+				25B07B4343220D9047066923803DABBE /* ECEncryptable.swift in Sources */,
+				0036E06D0609E0B31EB5442647D101AD /* ECError.swift in Sources */,
+				E67B00531A5F5C7ED8832A189AEC767B /* ECPrivateKey.swift in Sources */,
+				A9FDC28AAC04AAF28754E3C9F7D921F7 /* ECPublicKey.swift in Sources */,
+				6C1AB8C0B3CAE8E895E194F6C7A8F7FC /* ECSignable.swift in Sources */,
+				E4D29BF0611B19578C6954E36C8221D1 /* ECSignature.swift in Sources */,
+				3063E9B1F5C56B51525FC8D0D64BB07B /* EllipticCurve.swift in Sources */,
+				F8754CE53F48DF0322C92E13E907327E /* SSLPointerTricks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C5C114482696BB0B80010BE0686CD28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB372C031822D37C4FEB5AB7183591DF /* Pods-JWTDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77124DD555E84572F5CD6187B54FC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEE15376AD8AE6E3776D52A107229E0 /* BlueRSA-dummy.m in Sources */,
+				C3E84BE76BE3AD640327004B5A7868D9 /* CryptorRSA.swift in Sources */,
+				1AF6FD4A74E160188340F26D28982A50 /* CryptorRSAConstants.swift in Sources */,
+				2D70DC58C89E33AB723759672D36B683 /* CryptorRSADigest.swift in Sources */,
+				AC8C84031DC30CD75716F6B35B404D1D /* CryptorRSAErrors.swift in Sources */,
+				C2C69A82C314BF2092AAB5492EF9E4CD /* CryptorRSAKey.swift in Sources */,
+				99BC73949BA89A03FB1ED130B43A8B02 /* CryptorRSAUtilities.swift in Sources */,
+				CA96BF27B2693ED1519801E4DB145A16 /* Data+Extensions.swift in Sources */,
+				C22CD856FDC788515376347CF56327CC /* SSLPointerTricks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EAACEA4B0B6E2768699CC649A8CBE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D407CC9388C0080F8E78E8A44749757D /* ASN1Decoder.swift in Sources */,
+				DB48E054F4E39917134AD6A64B768983 /* ASN1Decoder-dummy.m in Sources */,
+				E9A794DA6F21B35DCEA524916B9823B6 /* ASN1DistinguishedNames.swift in Sources */,
+				84518F8B3BF851E83E0A11BB20459D64 /* ASN1Encoder.swift in Sources */,
+				CEB3067254A38A839E0AFCD98DED4616 /* ASN1Identifier.swift in Sources */,
+				0E545F3C2CF71F4AE0A082886375C3F5 /* ASN1Object.swift in Sources */,
+				ED292E392F7C2FBE9DC27A7B8BC3910B /* OID.swift in Sources */,
+				B79F611F8DC5C7827B4D3293CFBEE873 /* PKCS7.swift in Sources */,
+				12F1A8E4E8D4ED4702A5C2626445E153 /* PKCS7_AppleReceipt.swift in Sources */,
+				4536B74FE5AFE545116F074900963258 /* PKCS7_Signature.swift in Sources */,
+				C67BF5D7C0A9B8E4380C99D85B6BD446 /* X509Certificate.swift in Sources */,
+				19320FED91FDA23B239DB00F1904A478 /* X509Extension.swift in Sources */,
+				B404A78B1903F216F03312FC0C51FFFB /* X509ExtensionAltName.swift in Sources */,
+				22AE42A1213246D879A00727F3C5E67E /* X509ExtensionClasses.swift in Sources */,
+				5A1B131AC4063F33688803DE57CAF6E2 /* X509PublicKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A673C08285363E7F416AD7C5BA7711 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9201AACAF338B5A9B3D8055AC1605809 /* Asn1Parser.swift in Sources */,
+				F4C8BFA2A6C369044BBC1844B0B1BAAA /* ClearMessage.swift in Sources */,
+				054AC1E44E2B9E3C5C1C8D6422F43A8F /* EncryptedMessage.swift in Sources */,
+				24DCD048ADDDB8F5D4F5F3EFF4D6A394 /* Key.swift in Sources */,
+				D55723DED8139F0F876B0D76B1415A7A /* Message.swift in Sources */,
+				BFCC0163995C61F48B3B9A7A93DDA6FD /* NSData+SHA.m in Sources */,
+				F1C64627CE7DFA9690F630A09A7CB24A /* PrivateKey.swift in Sources */,
+				1A7A6400526AF9FE136CB9BA17EB4880 /* PublicKey.swift in Sources */,
+				C95CFC62A388EC4008BD8F0A8D950C18 /* Signature.swift in Sources */,
+				EFD812A46C14A681FE5FC222C6753C61 /* SwiftyRSA.swift in Sources */,
+				54EE94929FED666E53795A5B635B4D07 /* SwiftyRSA+ObjC.swift in Sources */,
+				9B0BC531061D8A0E9D1BA67FE97A263A /* SwiftyRSA-dummy.m in Sources */,
+				A1AE499E02CCA5DA5FBABDC92F7FFCC2 /* SwiftyRSAError.swift in Sources */,
+				F9A25DD0BE50B89C87B84FC369FC21D3 /* X509Certificate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D193B2F29C460045D229E24EA65DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D835F73197376AE844D95C90933226 /* BlueCryptor-dummy.m in Sources */,
+				BF67C108B6259651384C3918E40EE800 /* Crypto.swift in Sources */,
+				A98B69EE86D815F50D8B9AF37939B4B9 /* Cryptor.swift in Sources */,
+				6AF293CFF3CE6DD506AB54A3C9E2722D /* Digest.swift in Sources */,
+				1BEC012FE149C38578B49F0F4FF8249A /* HMAC.swift in Sources */,
+				F8D7C3AA037914AE4B5487CADBAB6A89 /* KeyDerivation.swift in Sources */,
+				E1FAE2E561064E7B6D82A872FF21EE22 /* Random.swift in Sources */,
+				276CCE7D6298C49428EB1454B1EDFECA /* SSLPointerTricks.swift in Sources */,
+				A22F501CEF8902F55BC9C721C5B7AD17 /* Status.swift in Sources */,
+				74991B968DEE7DC8432DBBE23F3257C3 /* StreamCryptor.swift in Sources */,
+				6262CEE6306F8826EDFAEF0A72943B25 /* Updatable.swift in Sources */,
+				AD86E160D9AF005D4C79997189A78541 /* Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E858EDECABCB9018D407107F8BF32A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10505599119A36E8F772ACBDD8A566DE /* Logger.swift in Sources */,
+				3FA694DC37ECA342AB0FADB6FD574E92 /* LoggerAPI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEFD65F27468CB3F0C6DFCE2C263CCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B4E052EFA52F1F185DC01777763360 /* BodyDecoder.swift in Sources */,
+				A442E3E925B8E3B705B6910DD907E2A8 /* BodyEncoder.swift in Sources */,
+				7BBEE2A1BF4C42D44EA22C22E7D8C342 /* BodyFormat.swift in Sources */,
+				DBDEFD5E67253B069025C2C08541AF8B /* ClosureAliases.swift in Sources */,
+				8B355855806FB7FEF614CC32DE5E49C6 /* Coder.swift in Sources */,
+				22291180549B1139F56D620A999310A4 /* Contracts.swift in Sources */,
+				7E462830E8D66124921BCBB93A76F1B0 /* Extensions.swift in Sources */,
+				20B2985EF70D6DB110B5583A67AD3005 /* KituraContracts-dummy.m in Sources */,
+				BD4FBDE5F2A710292C8287735137C509 /* QueryDecoder.swift in Sources */,
+				EA679C848DC90955BC12EAE0A954CBE0 /* QueryEncoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDEBC4A0D9A5D84E60108739A787390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67416A262352D41ECC8601B3E6D4744E /* CertificateSigningRequest.swift in Sources */,
+				AB796440000E3210864D6E17F984BD2B /* CertificateSigningRequest-dummy.m in Sources */,
+				66B106F85D9A3F6FC6ABE7E280391C7E /* CertificateSigningRequestConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1525ED8705D0DF0A6BE71D7AF37E06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94774AD5B012331F2CD021771BA534E2 /* Locks.swift in Sources */,
+				E3CFD426F201A7DA156E97D71EB2583D /* Logging.swift in Sources */,
+				33035D6D177D0DF4B5BD3B1184EDF437 /* Logging-dummy.m in Sources */,
+				8DD611E8904CDF485070E167C273350C /* LogHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		171A78D571ED43077E5EC4E6FC1A3B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CertificateSigningRequest;
+			target = A13A3F9C75F44E357FDADF6E2FF8D15B /* CertificateSigningRequest */;
+			targetProxy = 8AF51BDD2E62B9D05288C7B30DA242EC /* PBXContainerItemProxy */;
+		};
+		1DEADD57CD6CF7B770FBD675DFA1B82E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlueRSA;
+			target = 3CA5FD5A45C3F901A76060FE0F4A9B5F /* BlueRSA */;
+			targetProxy = A65DC3382B6A1E9C23858E62C18C6C18 /* PBXContainerItemProxy */;
+		};
+		2E69300F8EF93B717D9186EAFAE6B786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlueECC;
+			target = 9FF604BE1801EF6B67EED51EDA9D63C9 /* BlueECC */;
+			targetProxy = 6AC5C6777B6C012FFA7262A60E2C56FE /* PBXContainerItemProxy */;
+		};
+		37030B0E8C9FD0D01B165AC0AD33DA38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlueCryptor;
+			target = A28ABE059EE78F37B646540BEAB934E0 /* BlueCryptor */;
+			targetProxy = 2D0AA21EA461E2462D8F1019074C2FC6 /* PBXContainerItemProxy */;
+		};
+		60AA47A309C091946DDD719ECFE3491B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Logging;
+			target = 2ABF3F8EC6CE525E1E02C51D72C64E94 /* Logging */;
+			targetProxy = F6845484581291AF691177583278BC8F /* PBXContainerItemProxy */;
+		};
+		70E52FA2323301ACCFC8BD0BB9FF9973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoggerAPI;
+			target = 4090B1B7FD0B799BF794751E6A9D826F /* LoggerAPI */;
+			targetProxy = DEFC81DD974E323A5EBA9F4C5C8D0A52 /* PBXContainerItemProxy */;
+		};
+		97EC2A1F66BFF47E2C863557239F8B72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KituraContracts;
+			target = 921D74A1881BD89FA651ED7078F37128 /* KituraContracts */;
+			targetProxy = 29BBB5F900D2E4EFE5F983F40826B784 /* PBXContainerItemProxy */;
+		};
+		A979081D79BE8A2806D2115F5FD251D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Logging;
+			target = 2ABF3F8EC6CE525E1E02C51D72C64E94 /* Logging */;
+			targetProxy = 7ADA70D96813E8E2B72EDC2C8C0F1045 /* PBXContainerItemProxy */;
+		};
+		B1BECEA632D8A1B28C69AB8C77CEBC42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlueRSA;
+			target = 3CA5FD5A45C3F901A76060FE0F4A9B5F /* BlueRSA */;
+			targetProxy = 036CD81E5C8F6EFA64171E98804EFC0E /* PBXContainerItemProxy */;
+		};
+		B21424343F4DB8AB33E23EC7B17ED9AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlueECC;
+			target = 9FF604BE1801EF6B67EED51EDA9D63C9 /* BlueECC */;
+			targetProxy = 00B8BAFBB8AFD7544D5FB0FC76F252A1 /* PBXContainerItemProxy */;
+		};
+		B34FF8BA65C8E0E7E2B10AF747C49596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlueCryptor;
+			target = A28ABE059EE78F37B646540BEAB934E0 /* BlueCryptor */;
+			targetProxy = 4561B32F5B069AD01F74F3D92D6A0F9C /* PBXContainerItemProxy */;
+		};
+		BFFDB5C144EF7AD34E69022A83451046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KituraContracts;
+			target = 921D74A1881BD89FA651ED7078F37128 /* KituraContracts */;
+			targetProxy = 5CCC84E4663480F4F2AE0803E95DA13D /* PBXContainerItemProxy */;
+		};
+		C2B7F1CB2DE261ECECD7521913A0B176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftJWT;
+			target = E7F041D10DB8131E7E8B866AA3D62E32 /* SwiftJWT */;
+			targetProxy = 1DB0D684426FCD49064FBD6DD836014F /* PBXContainerItemProxy */;
+		};
+		D501F759C6F05A58A8DF75697DE65FDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OpenSSL-Universal";
+			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
+			targetProxy = 200B89251D18E3F7BA0617BBBA8066B7 /* PBXContainerItemProxy */;
+		};
+		DC5FF93D42BA645884E1E3F13A24223E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoggerAPI;
+			target = 4090B1B7FD0B799BF794751E6A9D826F /* LoggerAPI */;
+			targetProxy = 3452B69628EAE09094BE6B73930A7DD0 /* PBXContainerItemProxy */;
+		};
+		DEF497375D5228B4006F01C12C89E03D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyRSA;
+			target = 92A1C13902E7ACDA3ABB5BA1FEACC86C /* SwiftyRSA */;
+			targetProxy = E683AD8CE4B35409184FCAF79D179995 /* PBXContainerItemProxy */;
+		};
+		E8C3A25B2D841BAA8F228B172799993D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoggerAPI;
+			target = 4090B1B7FD0B799BF794751E6A9D826F /* LoggerAPI */;
+			targetProxy = 4131B24A72AB3A0A44C4EA4690E09386 /* PBXContainerItemProxy */;
+		};
+		EE32D29CF2E5752E7C7E079E3D52431F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ASN1Decoder;
+			target = AE24E4A530A4D9EBE9D2077B7CAB688D /* ASN1Decoder */;
+			targetProxy = 2C6A243CE526348187A7E945E691FF93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05E4A2484116C0DE4F8F7A2FCEF66352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800C5E589A0065A42D5539E65F506CD1 /* CertificateSigningRequest.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CertificateSigningRequest/CertificateSigningRequest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CertificateSigningRequest/CertificateSigningRequest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CertificateSigningRequest/CertificateSigningRequest.modulemap";
+				PRODUCT_MODULE_NAME = CertificateSigningRequest;
+				PRODUCT_NAME = CertificateSigningRequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		14C9080E950C83333F337033D5E951B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7623D3368151338B37198973A804151 /* ASN1Decoder.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ASN1Decoder/ASN1Decoder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASN1Decoder/ASN1Decoder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ASN1Decoder/ASN1Decoder.modulemap";
+				PRODUCT_MODULE_NAME = ASN1Decoder;
+				PRODUCT_NAME = ASN1Decoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		153A5FB8DFE7CB550152A7C30E70A287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4315A235ABD316E278BFAD3549853A9A /* OpenSSL-Universal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		154092AA4453A04A7B105BE2737920B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB18DDD975AE02F0BDDCF234706B9C6 /* Pods-JWTDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JWTDemo/Pods-JWTDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JWTDemo/Pods-JWTDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A06525791970D35560E5992D78207B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D2E7B2B02FFF0D5E00E78B8AF019FE /* BlueRSA.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlueRSA/BlueRSA-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueRSA/BlueRSA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BlueRSA/BlueRSA.modulemap";
+				PRODUCT_MODULE_NAME = CryptorRSA;
+				PRODUCT_NAME = CryptorRSA;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1D85203FE6F13773EAC8C7E9C7B6134C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892980DB4FFF0F96B38E2D6272DFCBB2 /* SwiftJWT.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftJWT/SwiftJWT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftJWT/SwiftJWT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftJWT/SwiftJWT.modulemap";
+				PRODUCT_MODULE_NAME = SwiftJWT;
+				PRODUCT_NAME = SwiftJWT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		245B3739412233F1D7352A6FE353EB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C750E9A65260FF73D19F0E5D78885181 /* SwiftyRSA.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyRSA/SwiftyRSA-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyRSA/SwiftyRSA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyRSA/SwiftyRSA.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyRSA;
+				PRODUCT_NAME = SwiftyRSA;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2AF779BF8BF109C4877209F7063ACAEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC5C19351E361A8CD0E5A6E6E1C4BF6 /* BlueECC.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlueECC/BlueECC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueECC/BlueECC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BlueECC/BlueECC.modulemap";
+				PRODUCT_MODULE_NAME = CryptorECC;
+				PRODUCT_NAME = CryptorECC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F818353A498C10F8546996ADC549FF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A2B3823220BC238E3D9832D47D27CB6 /* CertificateSigningRequest.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CertificateSigningRequest/CertificateSigningRequest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CertificateSigningRequest/CertificateSigningRequest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CertificateSigningRequest/CertificateSigningRequest.modulemap";
+				PRODUCT_MODULE_NAME = CertificateSigningRequest;
+				PRODUCT_NAME = CertificateSigningRequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4229CDA84F6FFB91EB3582D768947DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EE2E666B40EA61FE21ED18D50A790CF /* KituraContracts.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KituraContracts/KituraContracts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KituraContracts/KituraContracts-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KituraContracts/KituraContracts.modulemap";
+				PRODUCT_MODULE_NAME = KituraContracts;
+				PRODUCT_NAME = KituraContracts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77CF5E7AE78A90ACA392BC224E52A5E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 819C5DBA1D027CB41E66303CAB37EF0B /* LoggerAPI.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LoggerAPI/LoggerAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LoggerAPI/LoggerAPI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LoggerAPI/LoggerAPI.modulemap";
+				PRODUCT_MODULE_NAME = LoggerAPI;
+				PRODUCT_NAME = LoggerAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8471D00649AB05CDBB684CF7817B106B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9215DC15BCC6309E3495F539673901D6 /* SwiftJWT.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftJWT/SwiftJWT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftJWT/SwiftJWT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftJWT/SwiftJWT.modulemap";
+				PRODUCT_MODULE_NAME = SwiftJWT;
+				PRODUCT_NAME = SwiftJWT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		86FB9AEC9FAF25E560191BD38B930D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F137EE06DAF574DF1B3AA021CA02DC /* Pods-JWTDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JWTDemo/Pods-JWTDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JWTDemo/Pods-JWTDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		897D76141C04F119EB50C50F68E097B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F15A2E3EF02A5D13CB04F32D39EB5EF /* KituraContracts.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KituraContracts/KituraContracts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KituraContracts/KituraContracts-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KituraContracts/KituraContracts.modulemap";
+				PRODUCT_MODULE_NAME = KituraContracts;
+				PRODUCT_NAME = KituraContracts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		903C37567138CB8AA9280ABB6F28C50A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8308FDE171DC253321F573829AEDF943 /* OpenSSL-Universal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		921DE7A623D75F52E1686A6B9C698703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158251CC907F63BAE8A610CAC4CBE186 /* BlueRSA.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlueRSA/BlueRSA-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueRSA/BlueRSA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BlueRSA/BlueRSA.modulemap";
+				PRODUCT_MODULE_NAME = CryptorRSA;
+				PRODUCT_NAME = CryptorRSA;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BE9EB8EE6C2C6B744AFC5F497A58AC67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9684E6209009A8A9A3DBA8708A38D3D8 /* BlueCryptor.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlueCryptor/BlueCryptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueCryptor/BlueCryptor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BlueCryptor/BlueCryptor.modulemap";
+				PRODUCT_MODULE_NAME = Cryptor;
+				PRODUCT_NAME = Cryptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEE1FC74E7061AA87077AE9B362CD812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B14D113E4E47E8119530107ED9F64D27 /* ASN1Decoder.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ASN1Decoder/ASN1Decoder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASN1Decoder/ASN1Decoder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ASN1Decoder/ASN1Decoder.modulemap";
+				PRODUCT_MODULE_NAME = ASN1Decoder;
+				PRODUCT_NAME = ASN1Decoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C287237EFD750396F0B8B4A872D2B9AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186E895C282D805E79F38EAD48FC44C6 /* SwiftyRSA.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyRSA/SwiftyRSA-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyRSA/SwiftyRSA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyRSA/SwiftyRSA.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyRSA;
+				PRODUCT_NAME = SwiftyRSA;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C94E2C6006FD0DBB357CFD065F7DA4AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9533CA0877D4542B78C045C44035F516 /* Logging.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Logging/Logging-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Logging/Logging-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Logging/Logging.modulemap";
+				PRODUCT_MODULE_NAME = Logging;
+				PRODUCT_NAME = Logging;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB2DCDB4F0CC18E7271328F5C050CA78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A286C863F6B1BA58BB2489540680CCE /* BlueCryptor.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlueCryptor/BlueCryptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueCryptor/BlueCryptor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BlueCryptor/BlueCryptor.modulemap";
+				PRODUCT_MODULE_NAME = Cryptor;
+				PRODUCT_NAME = Cryptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5F928E7576F75B3B0ADB690611AF629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B29ABC1D87F7F74CA692D29692FE0B1 /* LoggerAPI.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LoggerAPI/LoggerAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LoggerAPI/LoggerAPI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LoggerAPI/LoggerAPI.modulemap";
+				PRODUCT_MODULE_NAME = LoggerAPI;
+				PRODUCT_NAME = LoggerAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F0C8E14ED1EC5B4A431525BB73893268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29755340494AF67C7FA91BD223E16F80 /* BlueECC.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlueECC/BlueECC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueECC/BlueECC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BlueECC/BlueECC.modulemap";
+				PRODUCT_MODULE_NAME = CryptorECC;
+				PRODUCT_NAME = CryptorECC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF4C0C9F4C7DCD3B2F12CC98D2464EF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79449E9CB695B8020CBBDFA19C87149 /* Logging.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Logging/Logging-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Logging/Logging-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Logging/Logging.modulemap";
+				PRODUCT_MODULE_NAME = Logging;
+				PRODUCT_NAME = Logging;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12BEBFE4FF4C9C0834ED6E2450BD21AC /* Build configuration list for PBXNativeTarget "BlueRSA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921DE7A623D75F52E1686A6B9C698703 /* Debug */,
+				1A06525791970D35560E5992D78207B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A64AF72071AF5E51B7A66AAA76306ED /* Build configuration list for PBXNativeTarget "KituraContracts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897D76141C04F119EB50C50F68E097B6 /* Debug */,
+				4229CDA84F6FFB91EB3582D768947DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BE23C3BDBFA7356B810B1E7D4FFA73F /* Build configuration list for PBXNativeTarget "Pods-JWTDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FB9AEC9FAF25E560191BD38B930D92 /* Debug */,
+				154092AA4453A04A7B105BE2737920B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		353854EABD3C9930FA73C80C43DFA9B9 /* Build configuration list for PBXNativeTarget "LoggerAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F928E7576F75B3B0ADB690611AF629 /* Debug */,
+				77CF5E7AE78A90ACA392BC224E52A5E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B8E23DD274A87283A14E67C9D2B0EFC /* Build configuration list for PBXNativeTarget "Logging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94E2C6006FD0DBB357CFD065F7DA4AD /* Debug */,
+				FF4C0C9F4C7DCD3B2F12CC98D2464EF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DAC03B644034D84EE2DFC8C5B6F83AC /* Build configuration list for PBXNativeTarget "BlueCryptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB2DCDB4F0CC18E7271328F5C050CA78 /* Debug */,
+				BE9EB8EE6C2C6B744AFC5F497A58AC67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7602F5D278AA2D1C563D4F665525B719 /* Build configuration list for PBXNativeTarget "BlueECC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AF779BF8BF109C4877209F7063ACAEF /* Debug */,
+				F0C8E14ED1EC5B4A431525BB73893268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B0A6BB48BBCB5E358060DA705675F4 /* Build configuration list for PBXNativeTarget "SwiftyRSA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245B3739412233F1D7352A6FE353EB13 /* Debug */,
+				C287237EFD750396F0B8B4A872D2B9AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B11215514448F13B91E0753CBF215403 /* Build configuration list for PBXNativeTarget "CertificateSigningRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F818353A498C10F8546996ADC549FF6 /* Debug */,
+				05E4A2484116C0DE4F8F7A2FCEF66352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1D72BC345233EADF30A97D462F723B7 /* Build configuration list for PBXAggregateTarget "OpenSSL-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				903C37567138CB8AA9280ABB6F28C50A /* Debug */,
+				153A5FB8DFE7CB550152A7C30E70A287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5F149B592CA44C228894BBBA67AE196 /* Build configuration list for PBXNativeTarget "ASN1Decoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C9080E950C83333F337033D5E951B3 /* Debug */,
+				BEE1FC74E7061AA87077AE9B362CD812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D6D21B85F08E28672F2885BBF5D200 /* Build configuration list for PBXNativeTarget "SwiftJWT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D85203FE6F13773EAC8C7E9C7B6134C /* Debug */,
+				8471D00649AB05CDBB684CF7817B106B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

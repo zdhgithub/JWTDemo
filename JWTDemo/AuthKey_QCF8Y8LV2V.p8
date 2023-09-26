@@ -1,0 +1,3 @@
+-----BEGIN PRIVATE KEY-----
+MIGXXXXXXX
+-----END PRIVATE KEY-----
